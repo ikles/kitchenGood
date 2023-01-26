@@ -72,6 +72,12 @@ body {
   width: 100%;
 }
 
+.hadvant__text strong {
+  display: block;
+  font-weight: 700;
+}
+
+
 .head {
   padding-top: 17px;
   padding-bottom: 19px;
@@ -92,7 +98,6 @@ body {
 }
 
 .head__logo-img {
-
 }
 
 .head__logo-text {
@@ -102,7 +107,7 @@ body {
   color: rgb(123, 104, 88);
 }
 
-.burger {
+.head__burger {
   background: url("../img/burger.svg") left 21px center no-repeat rgb(123, 104, 88);
   backdrop-filter: blur(2px);
   border-radius: 14px;
@@ -115,12 +120,12 @@ body {
   flex: 0 0 auto;
 }
 
-.burger__span {
+.head__burger-text {
   font-size: 14px;
   color: rgb(255, 255, 255);
 }
 
-.measurer__btn {
+.head__btn {
   border: 0.5px solid rgba(165, 165, 165, 0.5);
   backdrop-filter: blur(2px);
   border-radius: 14px;
@@ -154,15 +159,21 @@ body {
   margin-right: 30px;
 }
 
-.head__socials {
+.w-row.redbord {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.head__socs {
   display: flex;
 }
 
-.head__social {
-  display: inline-flex;  
+.head__soc {
+  display: inline-flex;
   margin-left: 7px;
-  margin-right: 7px;  
-  flex: none;
+  margin-right: 7px;
 }
 
 .head__mode {
@@ -183,14 +194,13 @@ body {
 .head__info {
   display: flex;
   align-items: center;
-  background-image: url("img/phone.svg");
+  background-image: url("../img/phone.svg");
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 29px;
 }
 
 .head__phones {
-
 }
 
 .head__phone {
@@ -209,22 +219,55 @@ body {
   margin-left: 10px;
 }
 
-
-.hadvant__text strong {
-  display: block;
-  font-weight: 700;
+.menu {
+  background: #4B535E;
+  padding-top: 18px;
+  padding-bottom: 17px;
+  display: flex;  
+          align-items: center;
 }
 
+.menu__wrap {
+  display: flex;  
+          align-items: center;
+          
+}
 
+.menu__burger {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgb(251, 251, 251);
+  min-height: 15px;  
+  display: inline-flex;  
+          align-items: center;
+  background-image: url("../img/burger-menu.svg");
+  background-repeat: no-repeat;
+  background-position: left 19px center;
+  padding-left: 63px;
+  padding-right: 19px;
+}
+
+.menu__ul {  
+  display: flex;
+  align-items: center;
+}
+
+.menu__li {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+.menu__link {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgb(251, 251, 251);
+}
 
 .hero {
   background: linear-gradient(rgb(242, 245, 250) 0%, rgb(237, 245, 255) 100%);
   box-shadow: rgba(116, 159, 223, 0.15) 0px 6px 20px inset;
   backdrop-filter: blur(2px);
   min-height: 515px;
-}
-
-.contain {
 }
 
 .hero__row {
@@ -312,6 +355,13 @@ body {
   padding-top: 48px;
   padding-left: 27px;
   position: relative;
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.hadvant--2 {
+  background: #849C82;
 }
 
 .hadvant__text {
@@ -424,7 +474,4 @@ body {
 
 
 
-
-
 @import "_media.scss";
-@import "_after-styless";

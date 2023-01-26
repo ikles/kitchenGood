@@ -6,9 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>  
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -19,11 +20,150 @@
 <body>
 
   <div class="wrapper">
-    <header class="header">
 
+    <header class="header">
+      <div class="head">
+        <div class="contain">
+          <div class="head__row">
+            <a href="" class="head__logo">
+              <img src="img/logo-head.svg" class="head__logo-img" />
+              <span class="head__logo-text">
+                Мебель в Москве <br />
+                по индивидуальным размерам
+              </span>
+            </a>
+            <a href="" class="head__burger"><span class="head__burger-text">КАТАЛОГ</span></a><a href="" class="head__btn">Вызов замерщика бесплатно</a><a href="" class="head__ask"> Задать вопрос?</a>
+          </div>
+          <div class="w-row redbord">
+            <div class="head__socs">
+              <a href="" class="head__soc"><img src="img/soc-1.svg" /></a><a href="" class="head__soc"><img src="img/soc-2.svg" /></a><a href="" class="head__soc"><img src="img/soc-3.svg" /></a>
+            </div>
+            <div class="head__mode">
+              Режим работы: <br />
+              Пн-Вс с 9:00 до 20:00
+            </div>
+            <a href="" class="head__mail">kuhnigood@gmail.com</a>
+            <div class="head__info">
+              <div class="head__phones"><a href="" class="head__phone">8 (495) 555-00-55</a><a href="" class="head__phone">8 (495) 555-00-55</a></div>
+              <a href="" class="head__call-back">Перезвонить вам?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <div class="contain">
+          <div class="menu__wrap">
+            <a href="" class="menu__burger">Каталог</a>
+            <ul class="menu__ul">
+              <li class="menu__li"><a href="" class="menu__link">О Кухни GOOD</a></li>
+              <li class="menu__li"><a href="" class="menu__link">Как заказать </a></li>
+              <li class="menu__li"><a href="" class="menu__link">Оплата и доставка</a></li>
+              <li class="menu__li"><a href="" class="menu__link">Рассрочка без %</a></li>
+              <li class="menu__li"><a href="" class="menu__link">Акции и скидки</a></li>
+              <li class="menu__li"><a href="" class="menu__link">Онлайн-расчет</a></li>
+              <li class="menu__li"><a href="" class="menu__link">Примеры работ</a></li>
+              <li class="menu__li"><a href="" class="menu__link">Отзывы</a></li>
+              <li class="menu__li"><a href="" class="menu__link">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="main">
-     
+      <div class="hero">
+        <div class="contain">
+          <div class="hero__row">
+            <div class="hero__left">
+              <div class="top__slider">
+                <div class="top__slide">
+                  <div class="topslide__content">
+                    <div class="topslide__label">для ювелиров</div>
+                    <div class="topslide__title">Более 200 видов кухонь Со скидкой до 20%</div>
+                    <div class="topslide__desc">Благодаря современным станкам ведущих европейских производителей</div>
+                    <a href="" class="topslide__btn">Посмотреть все</a>
+                  </div>
+                  <div class="topslide__img-w"><img src="img/slider-img.png" class="topslide__img" /></div>
+                </div>
+              </div>
+            </div>
+            <div class="hero__right">
+              <div class="hadvant">
+                <div class="hadvant__text">Бесплатный <strong>замер</strong></div>
+                <img src="img/top-banner-man.png" class="hadvant__img" />
+              </div>
+              <div class="hadvant hadvant--2">
+                <div class="hadvant__text">Бесплатная <strong>Доставка</strong></div>
+                <img src="img/top-banner-car.png" class="hadvant__img" />
+              </div>
+            </div>
+          </div>
+          <div class="advants">
+            <div class="advants__it">
+              <div class="advants__img-w"><img src="img/advants-1.svg" class="advants__img" /></div>
+              <div class="advants__text">Широкий ассортимент</div>
+            </div>
+            <div class="advants__it">
+              <div class="advants__img-w"><img src="img/advants-2.svg" class="advants__img" /></div>
+              <div class="advants__text">Квалифицированная команда</div>
+            </div>
+            <div class="advants__it">
+              <div class="advants__img-w"><img src="img/advants-3.svg" class="advants__img" /></div>
+              <div class="advants__text">Гарантийное обслуживание</div>
+            </div>
+            <div class="advants__it">
+              <div class="advants__img-w"><img src="img/advants-4.svg" class="advants__img" /></div>
+              <div class="advants__text">Собственное производство</div>
+            </div>
+            <div class="advants__it">
+              <div class="advants__img-w"><img src="img/advants-5.svg" class="advants__img" /></div>
+              <div class="advants__text">Доставка и монтаж по всей России</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mcatalog">
+        <div class="contain">
+          <h2 class="h2">Каталог</h2>
+          <div class="mcatalog__row">
+            <div class="mcatalog__col">
+              <div class="mcatalog__item">
+                <img src="img/mcatalog-1.jpg" class="mcatalog__img" />
+                <div class="mcatalog__title">Кухни</div>
+              </div>
+            </div>
+            <div class="mcatalog__col">
+              <div class="mcatalog__item">
+                <img src="img/mcatalog-2.jpg" class="mcatalog__img" />
+                <div class="mcatalog__title">Кухни</div>
+              </div>
+            </div>
+            <div class="mcatalog__col">
+              <div class="mcatalog__item">
+                <img src="img/mcatalog-3.jpg" class="mcatalog__img" />
+                <div class="mcatalog__title">Гардеробы</div>
+              </div>
+            </div>
+            <div class="mcatalog__col">
+              <div class="mcatalog__item">
+                <img src="img/mcatalog-4.jpg" class="mcatalog__img" />
+                <div class="mcatalog__title">Стенки</div>
+              </div>
+            </div>
+            <div class="mcatalog__col">
+              <div class="mcatalog__item">
+                <img src="img/mcatalog-5.jpg" class="mcatalog__img" />
+                <div class="mcatalog__title">В прихожую</div>
+              </div>
+            </div>
+            <div class="mcatalog__col">
+              <div class="mcatalog__item">
+                <img src="img/mcatalog-6.jpg" class="mcatalog__img" />
+                <div class="mcatalog__title">Материалы и цвета</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
     </main>
     <footer class="footer">      
     </footer>

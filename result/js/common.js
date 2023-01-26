@@ -54,7 +54,7 @@ else {
 let timerId = setInterval(() => $('.slider-3').css('transform', 'translateX(-1px)'), 1000);
 
 
-$('.slider-1').slick({
+/*$('.slider-1').slick({
   infinite: true,    
   speed: 6900,
   slidesToScroll: 1,
@@ -65,21 +65,7 @@ $('.slider-1').slick({
   autoplaySpeed: 0,  
   arrows: false,
   pauseOnHover: true,  
-});
-
-$('.slider-2').slick({
-  infinite: true,    
-  speed: 6900,
-  slidesToScroll: 1,
-  autoplay: true,    
-  slidesToShow: 4,
-  cssEase: 'linear',
-  autoplay: true,
-  autoplaySpeed: 0,
-  rtl: true ,
-  arrows: false,
-  pauseOnHover: true,
-})
+});*/
 
 
 /************************************/
