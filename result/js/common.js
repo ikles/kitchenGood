@@ -68,6 +68,12 @@ $('.top__slider').slick({
 });
 
 
+$('.accordion-header').click(function () {
+  $(this).toggleClass('active-header');
+  $(this).next().slideToggle(100).toggleClass('open-content');
+});
+
+
 /************************************/
 
 /*$('.wrapper').prepend('<span class="eye-3"></span>');
