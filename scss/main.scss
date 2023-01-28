@@ -542,7 +542,7 @@ body {
   position: relative;
   &:not(:last-child) {
     margin-right: 30px;
-  padding-right: 30px;
+  padding-right: 30px; 
     &:before {
       content: "";
       display: block;
