@@ -1553,12 +1553,11 @@ input[type="text"].consult__input-text {
     border-color: rgba(213, 209, 209, 0.2);
     color: unset; }
 
+.seo__content-2 P:not(:last-child) {
+  margin-bottom: 10px; }
+
 .medium {
   font-weight: 500; }
-
-.seo-text__w {
-  border-bottom: 1px solid rgba(213, 209, 209, 0.5);
-  padding-bottom: 23px; }
 
 .seo-text__h {
   font-weight: 600;
@@ -1579,7 +1578,7 @@ input[type="text"].consult__input-text {
   padding: 0 20px; }
 
 .seo-list__content {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 33px; }
   .seo-list__content ul li {
     font-size: 13px;
