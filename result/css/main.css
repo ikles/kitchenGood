@@ -856,6 +856,7 @@ body {
   height: 289px;
   box-shadow: rgba(94, 84, 98, 0.3) 0px 4px 4px inset;
   border-radius: 8px;
+  display: block;
   position: relative;
   overflow: hidden;
   cursor: pointer; }
@@ -889,6 +890,167 @@ body {
   letter-spacing: 0.01em;
   text-transform: uppercase;
   color: white; }
+
+.madvants {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background: #E5E5E5; }
+
+.madvants__row {
+  margin-top: 30px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: -7px;
+  margin-right: -7px; }
+
+.madvants__col {
+  width: 20%;
+  padding: 0 7px;
+  margin-bottom: 14px; }
+
+.madvants__item {
+  height: 229px;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 14px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  padding-top: 49px; }
+
+.madvants__img-w {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 66px; }
+
+.madvants__txt {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 13px;
+  min-height: 39px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #4b535e; }
+
+.badvants {
+  background: #e5e5e5;
+  padding-bottom: 56px; }
+
+.badvants__row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -12px;
+  margin-right: -12px; }
+
+.badvants__col {
+  width: 33.33%;
+  padding: 0 12px; }
+
+.badvants__item {
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  border-radius: 14px;
+  height: 398px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 33px;
+  padding-right: 33px; }
+
+.badvants__img-w {
+  width: 88px;
+  height: 88px;
+  margin-bottom: 33px; }
+
+.badvants__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #4b535e;
+  margin-bottom: 15px; }
+
+.badvants__txt {
+  font-size: 13px;
+  line-height: 1.2;
+  text-align: center;
+  color: #4b535e; }
+
+.badvants__payment {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 27px; }
+
+.badvants__payment-col {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(33.3333% - 18px); }
+
+.badvants__payment-img {
+  margin-bottom: 12px;
+  width: 32px;
+  height: 32px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 @media only screen and (max-width: 1199px) {
   .contain {
