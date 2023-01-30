@@ -6,7 +6,7 @@ jQuery(document).ready(function( $ ) {
         var myMap = new ymaps.Map("map", {
             center: [44.651491, 37.938316],        
             controls: ['zoomControl'],
-            zoom: 15            
+            zoom: 18            
         }),
 
         // Создаем геообъект с типом геометрии "Точка".
@@ -34,7 +34,7 @@ jQuery(document).ready(function( $ ) {
 
 
         // Создаем метку с помощью вспомогательного класса.
-        myPlacemark1 = new ymaps.Placemark([56.235340, 32.070925], {
+       /* myPlacemark1 = new ymaps.Placemark([56.235340, 32.070925], {
             // Свойства.
             // Содержимое иконки, балуна и хинта.
             iconContent: '',
@@ -44,28 +44,28 @@ jQuery(document).ready(function( $ ) {
             // Опции.
             // Стандартная фиолетовая иконка.
             preset: 'twirl#buildingsIcon'
-        });
+        });*/
 
 
 
 
 
-/*        myPlacemark2 = new ymaps.Placemark([52.778383, 41.377705], {
+        myPlacemark2 = new ymaps.Placemark([44.651491, 37.938316], {
             // Свойства.
             hintContent: '',
             iconContentLayout: '<div class="icn"></div>',
-            iconContent: '<div class="icn">Супермаркет Лента</div>'            
+            iconContent: '<div class="icn"></div>'
         }, {
             // Опции.
             // Своё изображение иконки метки.
-            iconImageHref: 'img/geo-map.svg',
+            iconImageHref: 'img/geo.svg',
             // Размеры метки.
-            iconImageSize: [50, 70],
+            iconImageSize: [60, 77],
             // Смещение левого верхнего угла иконки относительно
             // её "ножки" (точки привязки).
             iconImageOffset: [-3, -42],        
             iconContentOffset: [11, 9] // позиция подписи
-        });*/
+        });
 
        /* myPlacemark3 = new ymaps.Placemark([52.718857, 41.449453], {
             // Свойства.
@@ -96,7 +96,7 @@ jQuery(document).ready(function( $ ) {
     // Добавляем все метки на карту.
     myMap.controls.add(zoomControl);
     myMap.geoObjects
-    .add(myPlacemark1)        
+    .add(myPlacemark2)        
     .add(myGeoObject);
 }
 
