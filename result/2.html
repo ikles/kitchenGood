@@ -12,11 +12,13 @@
   <link
   href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap"
   rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -24,47 +26,33 @@
 
 <body>
 
-  <div class="wrapper">    
-    <header class="header header-1">
+  <div class="wrapper">
+        <header class="header header-2">
       <div class="head">
         <div class="contain">
           <div class="head__row">
-            <a href="" class="head__logo">
+            <a href="index.html" class="head__logo">
               <img src="img/logo-head.svg" class="head__logo-img" />
               <span class="head__logo-text">
                 Мебель в Москве <br />
-                по индивидуальным
-                <br>
-                размерам
+                по индивидуальным размерам
               </span>
             </a>
-
+            <a href="" class="head__burger"><span class="head__burger-text">КАТАЛОГ</span></a>
             <a href="" class="head__btn">Вызов замерщика бесплатно</a>
-            <div class="head__socs">
-              <a href="" class="head__soc"><img src="img/soc-1.svg" /></a>
-              <a href="" class="head__soc"><img src="img/soc-2.svg" /></a>
-              <a href="" class="head__soc"><img src="img/soc-3.svg" /></a>
-            </div>
-            <div class="head__mode">
-              Режим работы: <br />
-              Пн-Вс с 9:00 до 20:00
-            </div>
-            <a href="mailto:kuhnigood@gmail.com" class="head__mail">kuhnigood@gmail.com</a>
+            <a href="" class="head__ask"> Задать вопрос?</a>
             <div class="head__info">
-              <div class="head__phones">
+              <div class="head__phones">              
                 <a href="tel:8 (495) 555-00-55" class="head__phone">8 (495) 555-00-55</a>
-                <a href="tel:8 (495) 555-00-55" class="head__phone">8 (495) 555-00-55</a>
+                <a href="" class="head__call-back">Перезвонить вам?</a>
               </div>
-              <a href="" class="head__call-back">Перезвонить вам?</a>
             </div>
-          </div>
-          <!---->
+          </div>                                        
         </div>
       </div>
       <div class="menu">
         <div class="contain">
-          <div class="menu__wrap">
-            <a href="" class="menu__burger">Каталог</a>
+          <div class="menu__wrap">            
             <ul class="menu__ul">
   <li><a href="">О Кухни GOOD</a></li>
   <li><a href="">Как заказать </a></li>
@@ -78,217 +66,849 @@
 </ul>
           </div>
         </div>
-        <div class="menu-inn">
-  <div class="contain">
-    <div class="menu-inn__row">
-      <div class="menu-inn__col">
-        <div class="menu-inn__title">Кухни</div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">По стилю</a></li>
-            <li><a href="">По формелю</a></li>
-            <li><a href="">По материалу</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <div class="menu-inn__subtitle">по цвету:</div>
-          <ul class="menu-inn__list">
-            <li><a href="">Белые</a></li>
-            <li><a href="">Красные</a></li>
-            <li><a href="">Черный</a></li>
-            <li><a href="">Синий</a></li>
-            <li><a href="">Коричневый</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <div class="menu-inn__subtitle">по материалам</div>
-          <ul class="menu-inn__list">
-            <li><a href="">Лдсп</a></li>
-            <li><a href="">Металл</a></li>
-            <li><a href="">МДФ</a></li>
-            <li><a href="">ДСП</a></li>
-          </ul>
-        </div>
-        <a href="" class="menu-inn__subtitle">Посмотреть все</a>
       </div>
-      <div class="menu-inn__col">
-        <div class="menu-inn__title">Шкафы</div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">По стилю</a></li>
-            <li><a href="">По формелю</a></li>
-            <li><a href="">По материалу</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Угловые</a></li>
-            <li><a href="">Прямые</a></li>
-            <li><a href="">П-образные</a></li>
-            <li><a href="">С барной стойкой</a></li>
-            <li><a href="">С островом</a></li>
-            <li><a href="">Радиусные</a></li>
-            <li><a href="">Скошенные углы</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Кантри</a></li>
-            <li><a href="">Хайтек</a></li>
-            <li><a href="">Евро</a></li>
-            <li><a href="">Классические</a></li>
-            <li><a href="">Минимализм</a></li>
-            <li><a href="">Модерн</a></li>
-            <li><a href="">Прованс</a></li>
-            <li><a href="">Современные</a></li>
-            <li><a href="">Лофт</a></li>
+    </header> 
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><span> Внутренняя страница</span></li>
           </ul>
         </div>
       </div>
-      <div class="menu-inn__col">
-        <div class="menu-inn__title">Гаредробы</div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">По стилю</a></li>
-            <li><a href="">По формелю</a></li>
-            <li><a href="">По материалу</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Угловые</a></li>
-            <li><a href="">Прямые</a></li>
-            <li><a href="">П-образные</a></li>
-            <li><a href="">С барной стойкой</a></li>
-            <li><a href="">С островом</a></li>
-            <li><a href="">Радиусные</a></li>
-            <li><a href="">Скошенные углы</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Кантри</a></li>
-            <li><a href="">Хайтек</a></li>
-            <li><a href="">Евро</a></li>
-            <li><a href="">Классические</a></li>
-            <li><a href="">Минимализм</a></li>
-            <li><a href="">Модерн</a></li>
-            <li><a href="">Прованс</a></li>
-            <li><a href="">Современные</a></li>
-            <li><a href="">Лофт</a></li>
-          </ul>
+      <section class="catlist">
+        <div class="contain">
+
+          <section class="catlist__seo-text seo-text">
+            <div class="contain">
+              <div class="seo-text__w border__w">
+                <div class="seo-text__h">Кухни</div>
+
+                <p>Мы – самая эффективная школа английского языка в 2020 году. Почему самая эффективная?
+                  Мы работаем на результат, используя в процессе методы обучения 2020 года. Разрабатывали данную методику преподаватели и методисты с разных уголков мира. Мир меняется, и мы вместе с ним. Иногда наши процессы кажутся не обычными Мы – самая эффективная школа английского языка в 2020 году. Почему самая эффективная?<br>
+                  Мы работаем на результат, используя в процессе методы обучения 2020 года. Разрабатывали данную методику преподаватели и методисты с разных уголков мира. <br>
+                  Мир меняется, и мы вместе с ним. Иногда наши процессы кажутся не обычными Мы – самая эффективная школа английского языка в 2020 году. Почему самая эффективная?<br>
+                  Мы работаем на результат, используя в процессе методы обучения 2020 года. Разрабатывали данную методику преподаватели и методисты с разных уголков мира. Мир меняется, и мы вместе с ним. Иногда наши процессы кажутся не обычными Мы – самая эффективная школа английского языка в 2020 году. Почему самая эффективная?<br>
+                Мы работаем на результат, используя в процессе методы обучения 2020 года. Разрабатывали данную методику преподаватели и методисты с разных уголков мира. Мир меняется, и мы вместе с ним. Иногда наши процессы кажутся не обычными</p>
+
+                <p>Мы – самая эффективная школа английского языка в 2020 году. Почему самая эффективная?
+                  Мы работаем на результат, используя в процессе методы обучения 2020 года. Разрабатывали данную методику преподаватели и методисты с разных уголков мира. Мир меняется, и мы вместе с ним. Иногда наши процессы кажутся не обычными Мы – самая эффективная школа английского языка в 2020 году. Почему самая эффективная? <br>
+                  Мы работаем на результат, используя в процессе методы обучения 2020 года. Разрабатывали данную методику преподаватели и методисты с разных уголков мира. <br>
+                Мир меняется, и мы вместе с ним. Иногда наши процессы кажутся не обычными</p>
+
+              </div>
+            </div>
+          </section>
+
+
+          <div class="catlist__row">
+            <div class="catlist__left">
+              <form class="filter__form">
+                <div class="filter__h">Фильтр</div>
+                <div class="filter__filling">
+                  <div class="price-range__title">Цена</div>
+                  <div class="form__line">
+                    <div class="price">
+                      <div class="price__inputs price-range__w">
+                        <input id="price-start" type="text" class="input price-range__input-text">
+                        <span></span>
+                        <input id="price-end" type="text" class="input price-range__input-text">
+                      </div>
+                      <div class="price__range"></div>
+                    </div>
+                  </div>
+                  <!--form__line-->
+                  <div class="filter__price-w">
+                    <div class="filter__price">от 0 ₽</div>
+                    <div class="filter__price">до 10 000 ₽</div>
+                  </div>
+                  <div class="catfilter-it">
+                    <div class="select__filter catfilter-tit">
+                      <div class="select__title">Выберите категорию</div>
+                      <div class="select__arr"></div>
+                    </div>
+                    <div class="catfilter-cont">
+                      <div class="catfilter-scroll">
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Кухни</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Шкафы</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Прихожие</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Стенки</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Шкафы</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Прихожие</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Шкафы</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Прихожие</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Шкафы</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="cat">
+                          <span></span>
+                          <span class="_text">Прихожие</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div><!--item-->
+
+                  <div class="catfilter-it">
+                    <div class="select__filter catfilter-tit">
+                      <div class="select__title">Материал</div>
+                      <div class="select__arr"></div>
+                    </div>
+                    <div class="catfilter-cont">
+                      <div class="catfilter-scroll">
+                        <label class="select__label">
+                          <input type="checkbox" name="material">
+                          <span></span>
+                          <span class="_text">Металл</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="material">
+                          <span></span>
+                          <span class="_text">Пластик</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="material">
+                          <span></span>
+                          <span class="_text">Медь</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="material">
+                          <span></span>
+                          <span class="_text">Стелко</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="material">
+                          <span></span>
+                          <span class="_text">Поликорбонат</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div><!--item-->
+
+                  <div class="catfilter-it">
+                    <div class="select__filter catfilter-tit">
+                      <div class="select__title">Производитель</div>
+                      <div class="select__arr"></div>
+                    </div>
+                    <div class="catfilter-cont">
+                      <div class="catfilter-scroll">
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Россия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Германия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Финляндия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Украина</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Беларусь</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Германия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Финляндия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Германия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Финляндия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Германия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Финляндия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Германия</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="country">
+                          <span></span>
+                          <span class="_text">Финляндия</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div><!--item-->
+                  <div class="catfilter-it">
+                    <div class="select__filter catfilter-tit">
+                      <div class="select__title">Бренды</div>
+                      <div class="select__arr"></div>
+                    </div>
+                    <div class="catfilter-cont">
+                      <div class="catfilter-scroll">
+                        <label class="select__label">
+                          <input type="checkbox" name="brand">
+                          <span></span>
+                          <span class="_text">Название бренда</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="brand">
+                          <span></span>
+                          <span class="_text">Название бренда</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="brand">
+                          <span></span>
+                          <span class="_text">Название бренда</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="brand">
+                          <span></span>
+                          <span class="_text">Название бренда</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="brand">
+                          <span></span>
+                          <span class="_text">Название бренда</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="brand">
+                          <span></span>
+                          <span class="_text">Название бренда</span>
+                        </label>
+                        <label class="select__label">
+                          <input type="checkbox" name="brand">
+                          <span></span>
+                          <span class="_text">Название бренда</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div><!--item-->
+                  <div class="catfilter-it">                    
+                    <div class="catfilter-cont _auto">                      
+                      <label class="select__label">
+                        <input type="checkbox" name="chip">
+                        <span></span>
+                        <span class="_text">По дешевле</span>
+                      </label>
+                      <label class="select__label">
+                        <input type="checkbox" name="chip">
+                        <span></span>
+                        <span class="_text">Оптимально</span>
+                      </label>
+                      <label class="select__label">
+                        <input type="checkbox" name="chip">
+                        <span></span>
+                        <span class="_text">Высшее качество</span>
+                      </label>
+                    </div>                    
+                  </div><!--item-->
+                  <span class="show-filters__btn">Показать все фильтры</span>
+                  <button class="apply-filter__btn">Применить фильтр</button>
+                  <div class="reset__filter-w">
+                    <button class="reset__filter" type="reset">Сбросить фильтр</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+            <!--left-->
+            <div class="catlist__right">
+              <div class="catlist__h">Популярные модели мебели</div>
+              <div class="sort__w">
+                <div class="sort">
+                  <div class="sort__txt">Сортировать:</div>
+                  <ul class="sort__ul">
+                    <li><a href="" class="active">По популярности </a></li>
+                    <li><a href="">По цене</a></li>
+                    <li><a href="">По рейтингу</a></li>
+                    <li><a href="">По отзывам</a></li>
+                    <li><a href="">По размеру скидки</a></li>
+                  </ul>
+                </div>
+                <div class="sort">
+                  <div class="sort__txt">Показывать товаров:</div>
+                  <ul class="sort__ul">
+                    <li><a href="" class="active">20</a></li>
+                    <li><a href="">50</a></li>
+                    <li><a href="">100 </a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+
+              <div class="catproduct__row">
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
         </div>
       </div>
-      <div class="menu-inn__col">
-        <div class="menu-inn__title">Стенки</div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">По стилю</a></li>
-            <li><a href="">По формелю</a></li>
-            <li><a href="">По материалу</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Угловые</a></li>
-            <li><a href="">Прямые</a></li>
-            <li><a href="">П-образные</a></li>
-            <li><a href="">С барной стойкой</a></li>
-            <li><a href="">С островом</a></li>
-            <li><a href="">Радиусные</a></li>
-            <li><a href="">Скошенные углы</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Кантри</a></li>
-            <li><a href="">Хайтек</a></li>
-            <li><a href="">Евро</a></li>
-            <li><a href="">Классические</a></li>
-            <li><a href="">Минимализм</a></li>
-            <li><a href="">Модерн</a></li>
-            <li><a href="">Прованс</a></li>
-            <li><a href="">Современные</a></li>
-            <li><a href="">Лофт</a></li>
-          </ul>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
         </div>
       </div>
-      <div class="menu-inn__col">
-        <div class="menu-inn__title">В прихожую</div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">По стилю</a></li>
-            <li><a href="">По формелю</a></li>
-            <li><a href="">По материалу</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Угловые</a></li>
-            <li><a href="">Прямые</a></li>
-            <li><a href="">П-образные</a></li>
-            <li><a href="">С барной стойкой</a></li>
-            <li><a href="">С островом</a></li>
-            <li><a href="">Радиусные</a></li>
-            <li><a href="">Скошенные углы</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Кантри</a></li>
-            <li><a href="">Хайтек</a></li>
-            <li><a href="">Евро</a></li>
-            <li><a href="">Классические</a></li>
-            <li><a href="">Минимализм</a></li>
-            <li><a href="">Модерн</a></li>
-            <li><a href="">Прованс</a></li>
-            <li><a href="">Современные</a></li>
-            <li><a href="">Лофт</a></li>
-          </ul>
-        </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
       </div>
-      <div class="menu-inn__col">
-        <div class="menu-inn__title">Материалы</div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">По стилю</a></li>
-            <li><a href="">По формелю</a></li>
-            <li><a href="">По материалу</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Угловые</a></li>
-            <li><a href="">Прямые</a></li>
-            <li><a href="">П-образные</a></li>
-            <li><a href="">С барной стойкой</a></li>
-            <li><a href="">С островом</a></li>
-            <li><a href="">Радиусные</a></li>
-            <li><a href="">Скошенные углы</a></li>
-          </ul>
-        </div>
-        <div class="menu-inn__item">
-          <ul class="menu-inn__list">
-            <li><a href="">Кантри</a></li>
-            <li><a href="">Хайтек</a></li>
-            <li><a href="">Евро</a></li>
-            <li><a href="">Классические</a></li>
-            <li><a href="">Минимализм</a></li>
-            <li><a href="">Модерн</a></li>
-            <li><a href="">Прованс</a></li>
-            <li><a href="">Современные</a></li>
-            <li><a href="">Лофт</a></li>
-          </ul>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
         </div>
       </div>
     </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
   </div>
 </div>
+                </div><!--col-->
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models-2.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
       </div>
-    </header>
-    <main class="main">
-      
-
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
+                </div><!--col-->
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models-3.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
+                </div><!--col-->
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
+                </div><!--col-->
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models-2.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
+                </div><!--col-->
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models-3.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
+                </div><!--col-->
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
+                </div><!--col-->
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models-2.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
+                </div><!--col-->
+                <div class="catproduct__col">
+                  <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models-3.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
+                </div><!--col-->
+              </div>
+              <div class="catproduct__btn-w">
+                <a href="" class="catproduct__btn btn">ПОКАЗАТЬ ЕЩЕ</a>
+              </div>
+            </div>
+            <!--right-->
+          </div>
+        </div>
+      </section>
+      <!--catlist-->
 
       <section class="madvants">
         <div class="contain">
@@ -433,154 +1053,80 @@
 </div>
         </div>
       </section>
-
-      
-      
-
-      
-      <section class="seo-text">
+      <section class="inner__seo-text seo-text">
         <div class="contain">
           <div class="seo-text__w">
-            <div class="seo-text__h">СЕО текст</div>            
-            <p class="medium">При получении товара Вне зависимости от выбранного Вами способа доставки, есть несколько обязательных действий, которые нужно выполнить при получении товара перед тем, как поставить подпись принятия доставки на накладной:</p>            
-            <div class="seo-list__content row">
-              <div class="col-50">
-                <ul>
-                  <li>Присутствовать при приеме товара лично или передать такое право своему представителю
-                  </li>
-                  <li>Осмотреть внешний вид и целостность заводской упаковки
-                  </li>
-                  <li>Осмотреть все стеклянные элементы (в том числе и зеркала) на предмет целостности (сколы, трещины, царапины и т.п.)
-                  </li>
-                </ul>
-              </div>
-              <div class="col-50">
-                <ul>
-                  <li>Осмотреть все фасады, на предмет различных дефектов (царапины, сколы и т.п.)
-                  </li>
-                  <li>Проверить комплектацию товара, цвет, наполнение, количество и т.п. согласно бланка заказа. Замена вышеперечисленных деталей после принятия товара (мебели), происходит за счёт заказчика.</li>
-                  <li>Сохранить все документы, предоставленные Вам нашей компанией</li>
-                </ul>
-              </div>
-            </div>
-            <p>Только после того, как вы удостоверились в надлежащем качестве и состоянии доставленных изделий, подписывайте документы о принятии доставки. В противном случае свяжитесь с нами по одному из указанных телефонов, и наш гарантийный отдел поможет Вам решить сложившуюся ситуацию.
+            <div class="seo-text__h">СЕО текст</div>
+            <p>При получении товара
+              Вне зависимости от выбранного Вами способа доставки, есть несколько обязательных действий, которые нужно выполнить при получении товара перед тем, как поставить подпись принятия доставки на накладной:
             </p>
-            <br>
-            <hr>
-            <div class="h3">Гарантийное обслуживание</div>
-            <p>В нашем интернет-магазине действует гарантия от производителя. При условии правильной эксплуатации в нормальных условиях в течении гарантийного срока мы бесплатно устраним 
-              производственные дефекты, а в случае, если дефект невозможно устранить – заменим бракованную деталь. Сроки выполнения гарантийного обслуживания устанавливаются производителем.
-            </p>
-            <p><strong>Мы всегда стараемся идти на встречу покупателю, но существуют случаи, когда мы можем отказать в гарантийном обслуживании, если:
-            </strong></p>
-            <div class="seo-list__content row">
-              <div class="col-50">
-                <ul>
-                  <li>Истек гарантийный срок
-                  </li>
-                  <li>
-                    Присутствуют cлучайные повреждения и дефекты, причиненные клиентом или третьим лицом.
-                  </li>
-                  <li>Изделие повреждено в результате стихийных бедствий (природных явлений).
-                  </li>
-                  <li>Повреждения, возникли вследствие небрежного отношения или использования (несоблюдение температурного режима, чрезмерная нагрузка, воздействие жидкости, запыленности, механическое</li>
-                  <li>
-                    Не сохранена упаковка или заводские бирки/наклейки
-                  повреждение)</li>
-                </ul>
-              </div>
-              <div class="col-50">
-                <ul>
-                  <li>Повреждения, были вызваны использованием товара с нарушением правил эксплуатации конкретно данного изделия
-                  </li>
-                  <li>Если товар заносился и устанавливался заказчиком самостоятельно или третьими лицами, а не специалистами нашего магазина (за исключениями случаев явного фабричного брака)</li>
-                  <li>Товары, выполнялись и привозились под индивидуальный заказ</li>
-                  <li>Товар был собран, или поврежденная деталь была установлена
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="seo__content-2">
-              <p>*Регулировка дверей к шкафам, кухням и передвижение съехавших стоперов у шкафов купе - не является гарантией.
-              </p>
-              <p>**Гарантия не распространяться на фурнитуру (за исключением производственного брака обнаруженного при получении товара или сборке).</p>
-              <p>***Штатных мастеров по сборке в нашем магазине нет. Но мы можем помочь в поиске опытного специалиста.</p>
-              <p>Подтверждением гарантийных обязательств является гарантийный талон производителя, или гарантийный талон интернет-магазина (накладная)</p>
-            </div>
-            <br>            
-            <br>            
-            <hr>
-            <div class="h3">Внегарантийное обслуживание</div>
-            <p>Наш интернет-магазин дорожит каждым покупателем. По-этому даже при повреждении купленного Вами товара самостоятельно, или по истечению срока гарантии - сотрудники магазина 
-              готовы прийти Вам на помощь. Внегарантийное и послегарантийное обслуживание заключается в том, что продавец, по просьбе покупателя, может организовать работы по ремонту вышедших 
-              из строя изделий или их частей. При этом расходы по доставке рекламационного товара, в обе стороны, и стоимость самих работ по рекламации - оплачивает покупатель.
-            </p>
-            <div class="h3">Возврат товара</div>
-            <p>Мы действуем на основании закона о защите прав потребителей, который дает вам возможность возвратить товар в течение 14 дней со дня покупки. Поскольку TABURETKA.UA ориентирована 
-              на доставку товаров по всей Украине, мы начинаем считать это время не со дня заказа и оплаты товара, а со дня фактического получения вами товара на почте или со дня доставки. 
-              Для этого вам понадобится, конечно, иметь на руках документ почты (накладную), где будет указана дата выдачи посылки.
-            </p>
-            <p><strong>В соответствии со статьей 9 «Закона о защите прав потребителя», Вы имеете право обменять или вернуть приобретенный у нас товар в течение 14 дней после покупки при соблюдении следующих условий:</strong></p>
-
-
-            <div class="seo-list__content row">
-              <div class="col-50">
-                <ul>
-                  <li>Обмену или возврату подлежит только новый товар, который не был в употреблении и не имеет следов использования: царапин, сколов, потертостей, прочих повреждений.
-                  </li>
-                  <li>Товар не собирался и не монтировался, а также сохранен его товарный вид.
-                  </li>
-                  <li>
-                  Сохранена в целости упаковка товара и все ее компоненты.a</li>
-                </ul>
-              </div>
-              <div class="col-50">
-                <ul>
-                  <li>Cохранены комплектация товара, ярлыки, инструкции и заводская маркировка.
-                  </li>
-                  <li>Предъявлен товарный чек или накладная, подтверждающие факт покупки товара в нашем магазине. Стоимость транспортных услуг по возврату товара равна стоимости доставки и оплачивается покупателем.
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <p><i>Внимание! Если заказ на мебель индивидуален, изготовлен под размеры и / или в тканях определенных покупателем (заказчиком), то данный товар относится к перечню товаров в приложении 
-              № 3 постановления Кабинета Министров Украины от 19.03.1994 № 172 (Перечень товаров надлежащего качества, не подлежащих обмену (возврату)). Тем не менее, Вы можете вернуть мягкую 
-              мебель, но внесенную за него предоплату мы не возвращаем.
-            </i></p>
-            <br>
-            <br>
-
-            <hr>
-            <div class="h3">Гарантийный отдел</div>
             <p>
-              Для связи с нашим гарантийным отделом можно позвонить по любому из указанных на странице контактов телефону, где Вас переключат на нужного специалиста, либо написать 
-            на электронную почту uvaga@taburetka.ua</p>
-            <p>Если у Вас возникли рекламационные случаи, необходимо прислать на электронный адрес uvaga@taburetka.ua : фото изделия, фото паспорта изделия, фото поврежденного элемента 
-              и информацию с номером заказа.
+              Присутствовать при приеме товара лично или передать такое право своему представителю
+              Осмотреть внешний вид и целостность заводской упаковки <br>
+              Осмотреть все стеклянные элементы (в том числе и зеркала) на предмет целостности (сколы, трещины, царапины и т.п.)<br>
+              Осмотреть все фасады, на предмет различных дефектов (царапины, сколы и т.п.)<br>
+              Проверить комплектацию товара, цвет, наполнение, количество и т.п. согласно бланка заказа. Замена вышеперечисленных деталей после принятия товара (мебели), происходит за счёт заказчика.
+              Сохранить все документы, предоставленные Вам нашей компанией.<br>
+              Только после того, как вы удостоверились в надлежащем качестве и состоянии доставленных изделий, подписывайте документы о принятии доставки. В противном случае свяжитесь с нами по одному из указанных телефонов, и наш гарантийный отдел поможет Вам решить сложившуюся ситуацию.<br>
+              Гарантийное обслуживание<br>
+              В нашем интернет-магазине действует гарантия от производителя. При условии правильной эксплуатации в нормальных условиях в течении гарантийного срока мы бесплатно устраним производственные дефекты, а в случае, если дефект невозможно устранить – заменим бракованную деталь. Сроки выполнения гарантийного обслуживания устанавливаются производителем.
             </p>
-            <p>*Обратите внимание, срок выполнения рекламации составляет 14 дней, в некоторых случаях устанавливается месяц и более, о чем обязательно Вас уведомим, при этом общий срок 
-              решения вопроса не будет превышать 45 дней.
+            <p class="medium">Мы всегда стараемся идти на встречу покупателю, но существуют случаи, когда мы можем отказать в гарантийном обслуживании, если:</p>
+            <p>
+              Истек гарантийный срок<br>
+              Присутствуют cлучайные повреждения и дефекты, причиненные клиентом или третьим лицом.<br>
+              Изделие повреждено в результате стихийных бедствий (природных явлений).<br>
+              Повреждения, возникли вследствие небрежного отношения или использования (несоблюдение температурного режима, чрезмерная нагрузка, воздействие жидкости, запыленности, механическое повреждение)<br>
+              Повреждения, были вызваны использованием товара с нарушением правил эксплуатации конкретно данного изделия<br>
+              Если товар заносился и устанавливался заказчиком самостоятельно или третьими лицами, а не специалистами нашего магазина (за исключениями случаев явного фабричного брака)<br>
+              Товары, выполнялись и привозились под индивидуальный заказ<br>
+              Товар был собран, или поврежденная деталь была установлена<br>
+              Не сохранена упаковка или заводские бирки/наклейки<br>
+              *Регулировка дверей к шкафам, кухням и передвижение съехавших стоперов у шкафов купе - не является гарантией.
+            </p>
+            <p>**Гарантия не распространяться на фурнитуру (за исключением производственного брака обнаруженного при получении товара или сборке).</p>
+            <p>***Штатных мастеров по сборке в нашем магазине нет. Но мы можем помочь в поиске опытного специалиста.</p>
+            <p>Подтверждением гарантийных обязательств является гарантийный талон производителя, или гарантийный талон интернет-магазина (накладная)
             </p>
 
+            <p>Внегарантийное обслуживание<br>
+              Наш интернет-магазин дорожит каждым покупателем. По-этому даже при повреждении купленного Вами товара самостоятельно, или по истечению срока гарантии - сотрудники магазина готовы прийти Вам на помощь. Внегарантийное и послегарантийное обслуживание заключается в том, что продавец, по просьбе покупателя, может организовать работы по ремонту вышедших из строя изделий или их частей. При этом расходы по доставке рекламационного товара, в обе стороны, и стоимость самих работ по рекламации - оплачивает покупатель.
+            </p>
+
+            <p>Возврат товара <br>
+              Мы действуем на основании закона о защите прав потребителей, который дает вам возможность возвратить товар в течение 14 дней со дня покупки. Поскольку TABURETKA.UA ориентирована на доставку товаров по всей Украине, мы начинаем считать это время не со дня заказа и оплаты товара, а со дня фактического получения вами товара на почте или со дня доставки. Для этого вам понадобится, конечно, иметь на руках документ почты (накладную), где будет указана дата выдачи посылки.
+            </p>
+
+            <p class="medium">В соответствии со статьей 9 «Закона о защите прав потребителя», Вы имеете право обменять или вернуть приобретенный у нас товар в течение 14 дней после покупки при соблюдении следующих условий:</p>
+
+            <p>Обмену или возврату подлежит только новый товар, который не был в употреблении и не имеет следов использования: царапин, сколов, потертостей, прочих повреждений. <br>
+              Товар не собирался и не монтировался, а также сохранен его товарный вид.<br>
+              Сохранена в целости упаковка товара и все ее компоненты.<br>
+              Cохранены комплектация товара, ярлыки, инструкции и заводская маркировка.<br>
+              Предъявлен товарный чек или накладная, подтверждающие факт покупки товара в нашем магазине. Стоимость транспортных услуг по возврату товара равна стоимости доставки и оплачивается покупателем.<br>
+              Внимание! Если заказ на мебель индивидуален, изготовлен под размеры и / или в тканях определенных покупателем (заказчиком), то данный товар относится к перечню товаров в приложении № 3 постановления Кабинета Министров Украины от 19.03.1994 № 172 (Перечень товаров надлежащего качества, не подлежащих обмену (возврату)). Тем не менее, Вы можете вернуть мягкую мебель, но внесенную за него предоплату мы не возвращаем.<br>
+              Гарантийный отдел<br>
+              Для связи с нашим гарантийным отделом можно позвонить по любому из указанных на странице контактов телефону, где Вас переключат на нужного специалиста, либо написать на электронную почту uvaga@taburetka.ua
+            </p>
+            <p>
+              Если у Вас возникли рекламационные случаи, необходимо прислать на электронный адрес uvaga@taburetka.ua : фото изделия, фото паспорта изделия, фото поврежденного элемента и информацию с номером заказа.
+            </p>
+
+            <p>*Обратите внимание, срок выполнения рекламации составляет 14 дней, в некоторых случаях устанавливается месяц и более, о чем обязательно Вас уведомим, при этом общий срок решения вопроса не будет превышать 45 дней.
+            </p>
           </div>
         </div>
       </section>
-      <section class="partners">
-  <div class="contain">
-    <div class="h2">Наши партнеры</div>
-    <div class="partners__slider">
-      <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-2.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-2.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>            
-      <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
-    </div>
-  </div>
-</section>
+      <div class="partners__slider">
+  <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-2.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-2.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>            
+  <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
+</div>  
       <section class="map" id="map"></section>
     </main>
     <footer class="footer">  
@@ -677,9 +1223,13 @@
   <!--wrapper-->
 
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/slick.js"></script>
-  <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
+<script src="js/slick.js"></script>
+<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
   <script async src="js/placemark.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script src="js/wNumb.min.js"></script>
+  <script src="js/select2.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 

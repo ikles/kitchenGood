@@ -73,7 +73,21 @@ jQuery(document).ready(function( $ ) {
   })
 
 
-  let timerId = setInterval(() => $('.slider-3').css('transform', 'translateX(-1px)'), 1000);
+  $('.show-filters__btn').click(function (e) {
+    e.preventDefault();
+    $('.catfilter-tit, .catfilter-cont').removeClass('hide');
+  })
+
+
+
+
+  $(".catfilter-cont").mCustomScrollbar({
+    axis: "y",
+    theme: "dark-3",
+    mouseWheel: 1,
+    scrollInertia: '230'
+  });    
+
 
 
   $('.top__slider').slick({
@@ -108,6 +122,18 @@ jQuery(document).ready(function( $ ) {
   $('.accordion-header').click(function () {
     $(this).toggleClass('active-header');
     $(this).next().slideToggle(100).toggleClass('open-content');
+  });
+
+
+
+  $('.catfilter-it').each(function () {
+    let tit = $(this).find('.catfilter-tit');
+    let cont = $(this).find('.catfilter-cont');
+    tit.click(function (e) {
+      e.preventDefault();
+      $(this).toggleClass('hide');
+      cont.toggleClass('hide');
+    });
   });
 
 
@@ -180,6 +206,54 @@ $('body:not(.active)').css('background-image', "unset");
       minimumResultsForSearch: -1
     });
   }
+
+
+//RANGE
+  const priceSlider = document.querySelector('.price__range');
+  if (priceSlider) {
+
+  //let textFrom = priceSlider.getAttribute('data-from');
+    let textTo = priceSlider.getAttribute('data-to');
+
+    noUiSlider.create(priceSlider, {
+      start: [0, 10000],
+      connect: true,
+    //tooltips: [wNumb({ decimals: 0, prefix: '' + '' }), wNumb({ decimals: 0, prefix: '' + '' })],
+      range: {
+        'min': [0],
+        'max': [10000]
+      }    
+    });
+
+
+    const priceStart = document.getElementById('price-start');
+    const priceEnd = document.getElementById('price-end');
+    priceStart.addEventListener('change', setPriceValues);
+    priceEnd.addEventListener('change', setPriceValues);
+
+
+    priceSlider.noUiSlider.on('update', function(values, handle) {
+      priceStart.value = +Math.round(priceSlider.noUiSlider.get()[0]);
+      priceEnd.value = +Math.round(priceSlider.noUiSlider.get()[1]);
+    });
+
+
+
+    function setPriceValues() {
+      let priceStartValue;
+      let priceEndValue;
+      if (priceStart.value != '') {
+        priceStartValue = priceStart.value;
+      }
+      if (priceEnd.value != '') {
+        priceEndValue = priceEnd.value;
+      }
+      priceSlider.noUiSlider.set([priceStartValue, priceEndValue]);
+  } //spV
+}// if priceSlider
+
+
+
 
 }); //ready
 

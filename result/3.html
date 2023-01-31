@@ -12,11 +12,13 @@
   <link
   href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@300;400;500;700&display=swap"
   rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+  <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
@@ -24,7 +26,10 @@
 
 <body>
 
-  <div class="wrapper">    
+  <div class="wrapper">
+
+
+
         <header class="header header-2">
       <div class="head">
         <div class="contain">
@@ -36,35 +41,21 @@
                 по индивидуальным размерам
               </span>
             </a>
-            <a href="" class="head__burger"><span class="head__burger-text">КАТАЛОГ</span></a><a href="" class="head__btn">Вызов замерщика бесплатно</a><a href="" class="head__ask"> Задать вопрос?</a>
-          </div>
-          
-          
-
-          <div class="head__socs">
-            <a href="" class="head__soc"><img src="img/soc-1.svg" /></a>
-            <a href="" class="head__soc"><img src="img/soc-2.svg" /></a>
-            <a href="" class="head__soc"><img src="img/soc-3.svg" /></a>
-          </div>
-          <div class="head__mode">
-            Режим работы: <br />
-            Пн-Вс с 9:00 до 20:00
-          </div>
-          <a href="mailto:kuhnigood@gmail.com" class="head__mail">kuhnigood@gmail.com</a>
-          <div class="head__info">
-            <div class="head__phones">
-              <a href="tel:8 (495) 555-00-55" class="head__phone">8 (495) 555-00-55</a>
-              <a href="tel:8 (495) 555-00-55" class="head__phone">8 (495) 555-00-55</a>
+            <a href="" class="head__burger"><span class="head__burger-text">КАТАЛОГ</span></a>
+            <a href="" class="head__btn">Вызов замерщика бесплатно</a>
+            <a href="" class="head__ask"> Задать вопрос?</a>
+            <div class="head__info">
+              <div class="head__phones">              
+                <a href="tel:8 (495) 555-00-55" class="head__phone">8 (495) 555-00-55</a>
+                <a href="" class="head__call-back">Перезвонить вам?</a>
+              </div>
             </div>
-            <a href="" class="head__call-back">Перезвонить вам?</a>
-          </div>
-          
+          </div>                                        
         </div>
       </div>
       <div class="menu">
         <div class="contain">
-          <div class="menu__wrap">
-            <a href="" class="menu__burger">Каталог</a>
+          <div class="menu__wrap">            
             <ul class="menu__ul">
   <li><a href="">О Кухни GOOD</a></li>
   <li><a href="">Как заказать </a></li>
@@ -80,9 +71,34 @@
         </div>
       </div>
     </header> 
+        <div class="popcat">
+      <span class="popcat__close"></span>
+      <div class="popcat__row">
+        <div class="popcat__img-w">
+          <img src="img/popcat__img.jpg" class="popcat__img">
+        </div>
+        <div class="popcat__content">
+          <div class="popcat__title">Кухни делятся на подкатегории</div>
+          <p class="popcat__text">У нас есть опыт продаж мебели в оптовом направлении и в производстве мебели по
+            индивидуальным заказам. Компания является импортером мебели, сантехники и другой сопутствующей продукции из
+            Китая, Италии, Испании, Румынии, Словении, Белоруссии. Благодаря этому мы можем предложить широкий
+            ассортимент мебели и сопутствующих товаров для дома. У нас есть опыт продаж мебели в оптовом направлении и в
+            производстве мебели по индивидуальным заказам. Компания является импортером мебели, сантехники и другой
+          сопутствующей продукции из Китая, Италии, Испании, Румынии, Словении, Белоруссии. </p>
+          <div class="popcat__price">155 200 ₽</div>
+        </div>
+      </div>
+    </div>
     <main class="main">
-
-      <section class="badvants">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li><span> Внутренняя страница</span></li>
+          </ul>
+        </div>
+      </div>
+      <section class="badvants badvants-3">
         <div class="contain">
           <div class="badvants__row">
   <div class="badvants__col">
@@ -140,7 +156,7 @@
 </div>
         </div>
       </section>
-      <section class="reviews">
+      <section class="reviews reviews-3">
         <div class="contain">
           
 <div class="reviews__w border__w">
@@ -234,7 +250,7 @@
 
         </div>
       </section>
-      <section class="quest">
+      <section class="quest quest-3">
         <div class="contain">
           <div class="quest__w">
   <div class="quest__img"><img src="img/quest.svg"></div>
@@ -320,10 +336,79 @@
   </div>
 </div>
         </div>
-      </section>     
-      <section class="scheme">
+      </section>
+      <div class="calc">
         <div class="contain">
-          <div class="h2">Схема работы</div>
+          <div class="calc__row">
+            <div class="calc__left">
+              <div class="calc__title">Рассчитать стоимость</div>
+              <form class="calc__form">
+                <div class="select__lbl">
+                  <div class="select__lbl-txt">Форма:</div>
+                  <select name="" class="select">
+                    <option value="Прямая">Прямая</option>
+                    <option value="Кривая">Кривая</option>
+                  </select>
+                </div>
+                <div class="select__lbl">
+                  <div class="select__lbl-txt">Размеры по стене (мм.)</div>
+                  <select name="" class="select">
+                    <option value="Сторона A">Сторона A</option>
+                    <option value="Сторона B">Сторона B</option>
+                  </select>
+                </div>
+                <div class="select__lbl">
+                  <div class="select__lbl-txt">Материал фасадов</div>
+                  <select name="" class="select">
+                    <option value="МДФ, плёнка ПВХ">МДФ, плёнка ПВХ</option>
+                    <option value="МДФ, плёнка ПВХ">МДФ, плёнка ПВХ</option>
+                  </select>
+                </div>
+                <div class="select__lbl">
+                  <div class="select__lbl-txt">Высота верхних шкафов</div>
+                  <select name="" class="select">
+                    <option value="720 мм.">720 мм.</option>
+                    <option value="810 мм.">810 мм.</option>
+                  </select>
+                </div>
+                <div class="select__lbl">
+                  <div class="select__lbl-txt">Столешница:</div>
+                  <select name="" class="select">
+                    <option value="Пластиковая, толщиной 26 мм.">Пластиковая, толщиной 26 мм.</option>
+                    <option value="Пластиковая, толщиной 34 мм.">Пластиковая, толщиной 34 мм.</option>
+                  </select>
+                </div>
+                <button class="calculate__btn">РАССЧИТАТЬ СТОИМОСТЬ</button>
+              </form>
+            </div>
+            <div class="calc__right">
+              <div class="calc__subtitle">Позвоните по телефону, напишите на почту, или оставьте заявку через любую
+              форму обратной связи</div>
+              <ul class="calc__ul">
+                <li>Приедем, произведём замер помещения, составим дизайн-проект</li>
+                <li>
+                  Заключаем договор, вы вносите предоплату: всего 10% от суммы договора
+                </li>
+                <li>Передаём ваш заказ в производство</li>
+                <li>Через 7 дней доставляем мебель</li>
+                <li>
+                  Сборка в течение 1-2 дней
+                </li>
+                <li>Окончательный расчет</li>
+              </ul>
+              <div class="calc__text">
+                <p>*В стоимость включена вся необходимая фурнитура.</p>
+                <p>Для более точного расчёта стоимости звоните по телефонам: 8 (495) 741-87-73. Либо, оставьте номер
+                телефона или адрес электронной почты в форме ниже, и наш оператор свяжется с вами.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="scheme scheme-3">
+        <div class="contain">
+          <div class="h2 scheme-3__h2">От идеи до воплощения всего 5 шагов</div>
           <div class="scheme__row">
   <div class="scheme__col">
     <div class="scheme__item">
@@ -372,150 +457,253 @@
   </div>
 </div>
         </div>
-      </section>   
-      <section class="seo-text">
+      </section>
+      <section class="simproducts">
         <div class="contain">
-          <div class="seo-text__w">
-            <div class="seo-text__h">СЕО текст</div>            
-            <p class="medium">При получении товара Вне зависимости от выбранного Вами способа доставки, есть несколько обязательных действий, которые нужно выполнить при получении товара перед тем, как поставить подпись принятия доставки на накладной:</p>            
-            <div class="seo-list__content row">
-              <div class="col-50">
-                <ul>
-                  <li>Присутствовать при приеме товара лично или передать такое право своему представителю
-                  </li>
-                  <li>Осмотреть внешний вид и целостность заводской упаковки
-                  </li>
-                  <li>Осмотреть все стеклянные элементы (в том числе и зеркала) на предмет целостности (сколы, трещины, царапины и т.п.)
-                  </li>
-                </ul>
-              </div>
-              <div class="col-50">
-                <ul>
-                  <li>Осмотреть все фасады, на предмет различных дефектов (царапины, сколы и т.п.)
-                  </li>
-                  <li>Проверить комплектацию товара, цвет, наполнение, количество и т.п. согласно бланка заказа. Замена вышеперечисленных деталей после принятия товара (мебели), происходит за счёт заказчика.</li>
-                  <li>Сохранить все документы, предоставленные Вам нашей компанией</li>
-                </ul>
-              </div>
+          <div class="simproducts__h2 h2">Похожие кухни </div>
+          <div class="simproducts__row">
+            <div class="simproducts__col">
+              <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
             </div>
-            <p>Только после того, как вы удостоверились в надлежащем качестве и состоянии доставленных изделий, подписывайте документы о принятии доставки. В противном случае свяжитесь с нами по одному из указанных телефонов, и наш гарантийный отдел поможет Вам решить сложившуюся ситуацию.
-            </p>
-            <br>
-            <hr>
-            <div class="h3">Гарантийное обслуживание</div>
-            <p>В нашем интернет-магазине действует гарантия от производителя. При условии правильной эксплуатации в нормальных условиях в течении гарантийного срока мы бесплатно устраним 
-              производственные дефекты, а в случае, если дефект невозможно устранить – заменим бракованную деталь. Сроки выполнения гарантийного обслуживания устанавливаются производителем.
-            </p>
-            <p><strong>Мы всегда стараемся идти на встречу покупателю, но существуют случаи, когда мы можем отказать в гарантийном обслуживании, если:
-            </strong></p>
-            <div class="seo-list__content row">
-              <div class="col-50">
-                <ul>
-                  <li>Истек гарантийный срок
-                  </li>
-                  <li>
-                    Присутствуют cлучайные повреждения и дефекты, причиненные клиентом или третьим лицом.
-                  </li>
-                  <li>Изделие повреждено в результате стихийных бедствий (природных явлений).
-                  </li>
-                  <li>Повреждения, возникли вследствие небрежного отношения или использования (несоблюдение температурного режима, чрезмерная нагрузка, воздействие жидкости, запыленности, механическое</li>
-                  <li>
-                    Не сохранена упаковка или заводские бирки/наклейки
-                  повреждение)</li>
-                </ul>
-              </div>
-              <div class="col-50">
-                <ul>
-                  <li>Повреждения, были вызваны использованием товара с нарушением правил эксплуатации конкретно данного изделия
-                  </li>
-                  <li>Если товар заносился и устанавливался заказчиком самостоятельно или третьими лицами, а не специалистами нашего магазина (за исключениями случаев явного фабричного брака)</li>
-                  <li>Товары, выполнялись и привозились под индивидуальный заказ</li>
-                  <li>Товар был собран, или поврежденная деталь была установлена
-                  </li>
-                </ul>
-              </div>
+            <div class="simproducts__col">
+              <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models-2.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
             </div>
-
-            <div class="seo__content-2">
-              <p>*Регулировка дверей к шкафам, кухням и передвижение съехавших стоперов у шкафов купе - не является гарантией.
-              </p>
-              <p>**Гарантия не распространяться на фурнитуру (за исключением производственного брака обнаруженного при получении товара или сборке).</p>
-              <p>***Штатных мастеров по сборке в нашем магазине нет. Но мы можем помочь в поиске опытного специалиста.</p>
-              <p>Подтверждением гарантийных обязательств является гарантийный талон производителя, или гарантийный талон интернет-магазина (накладная)</p>
+            <div class="simproducts__col">
+              <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models-3.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
             </div>
-            <br>            
-            <br>            
-            <hr>
-            <div class="h3">Внегарантийное обслуживание</div>
-            <p>Наш интернет-магазин дорожит каждым покупателем. По-этому даже при повреждении купленного Вами товара самостоятельно, или по истечению срока гарантии - сотрудники магазина 
-              готовы прийти Вам на помощь. Внегарантийное и послегарантийное обслуживание заключается в том, что продавец, по просьбе покупателя, может организовать работы по ремонту вышедших 
-              из строя изделий или их частей. При этом расходы по доставке рекламационного товара, в обе стороны, и стоимость самих работ по рекламации - оплачивает покупатель.
-            </p>
-            <div class="h3">Возврат товара</div>
-            <p>Мы действуем на основании закона о защите прав потребителей, который дает вам возможность возвратить товар в течение 14 дней со дня покупки. Поскольку TABURETKA.UA ориентирована 
-              на доставку товаров по всей Украине, мы начинаем считать это время не со дня заказа и оплаты товара, а со дня фактического получения вами товара на почте или со дня доставки. 
-              Для этого вам понадобится, конечно, иметь на руках документ почты (накладную), где будет указана дата выдачи посылки.
-            </p>
-            <p><strong>В соответствии со статьей 9 «Закона о защите прав потребителя», Вы имеете право обменять или вернуть приобретенный у нас товар в течение 14 дней после покупки при соблюдении следующих условий:</strong></p>
-
-
-            <div class="seo-list__content row">
-              <div class="col-50">
-                <ul>
-                  <li>Обмену или возврату подлежит только новый товар, который не был в употреблении и не имеет следов использования: царапин, сколов, потертостей, прочих повреждений.
-                  </li>
-                  <li>Товар не собирался и не монтировался, а также сохранен его товарный вид.
-                  </li>
-                  <li>
-                  Сохранена в целости упаковка товара и все ее компоненты.a</li>
-                </ul>
-              </div>
-              <div class="col-50">
-                <ul>
-                  <li>Cохранены комплектация товара, ярлыки, инструкции и заводская маркировка.
-                  </li>
-                  <li>Предъявлен товарный чек или накладная, подтверждающие факт покупки товара в нашем магазине. Стоимость транспортных услуг по возврату товара равна стоимости доставки и оплачивается покупателем.
-                  </li>
-                </ul>
-              </div>
+            <div class="simproducts__col">
+              <div class="catproduct">
+  <a href="" class="pop-models__img-w">
+    <img src="img/pop-models.jpg"
+    class="pop-models__img">
+  </a>
+  <div class="pop-models__star-w">
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+    <a href="" class="pop-models__star"></a>
+  </div>
+  <div class="pop-models__tab-w">
+    <div class="pop-models__tab">
+      <div class="pop-models__parameter_title">Кухня альфа белый глянец</div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип кухни </div>
+        <div class="pop-models__parameter-txt">прямая</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Материал фасада </div>
+        <div class="pop-models__parameter-txt"> ДСП</div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Покрытие фасада</div>
+        <div class="pop-models__parameter-txt">ламинация
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Тип фасада </div>
+        <div class="pop-models__parameter-txt"> мат
+        </div>
+      </div>
+      <div class="pop-models__parameter">
+        <div class="pop-models__parameter-txt">Толщина фасада </div>
+        <div class="pop-models__parameter-txt"> 16 мм</div>
+      </div>
+      <div class="pop-models__price-w">
+        <div class="pop-models__price">155 200 ₽</div>
+        <div class="pop-models__price-meter-w">
+          <div class="pop-models__price-txt">Погонный метр</div>
+          <div class="pop-models__price-meter">15 200 ₽ </div>
+        </div>
+      </div>
+    </div>
+    <div class="pop-models__btn-w">
+      <a href="" class="calc__btn">Калькулятор</a>
+      <a href="" class="more__btn">Подробнее</a>
+    </div>
+    <div class="one__click-w">
+      <a href="" class="one__click">Купить в один клик</a>
+    </div>
+  </div>
+</div>
             </div>
-            <p><i>Внимание! Если заказ на мебель индивидуален, изготовлен под размеры и / или в тканях определенных покупателем (заказчиком), то данный товар относится к перечню товаров в приложении 
-              № 3 постановления Кабинета Министров Украины от 19.03.1994 № 172 (Перечень товаров надлежащего качества, не подлежащих обмену (возврату)). Тем не менее, Вы можете вернуть мягкую 
-              мебель, но внесенную за него предоплату мы не возвращаем.
-            </i></p>
-            <br>
-            <br>
-
-            <hr>
-            <div class="h3">Гарантийный отдел</div>
-            <p>
-              Для связи с нашим гарантийным отделом можно позвонить по любому из указанных на странице контактов телефону, где Вас переключат на нужного специалиста, либо написать 
-            на электронную почту uvaga@taburetka.ua</p>
-            <p>Если у Вас возникли рекламационные случаи, необходимо прислать на электронный адрес uvaga@taburetka.ua : фото изделия, фото паспорта изделия, фото поврежденного элемента 
-              и информацию с номером заказа.
-            </p>
-            <p>*Обратите внимание, срок выполнения рекламации составляет 14 дней, в некоторых случаях устанавливается месяц и более, о чем обязательно Вас уведомим, при этом общий срок 
-              решения вопроса не будет превышать 45 дней.
-            </p>
-
           </div>
         </div>
       </section>
-      <section class="partners">
-  <div class="contain">
-    <div class="h2">Наши партнеры</div>
-    <div class="partners__slider">
-      <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-2.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-2.svg" /></a>
-      <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>            
-      <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
-    </div>
-  </div>
-</section>
+      <section class="partners partners-3">
+        <div class="contain">
+          <div class="h2">Наши партнеры</div>
+          <div class="partners__slider">
+  <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-2.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-2.svg" /></a>
+  <a href="" class="partners__slide"><img src="img/partners-3.svg" /></a>            
+  <a href="" class="partners__slide"><img src="img/partners-1.svg" /></a>
+</div>  
+        </div>
+      </section>
       <section class="map" id="map"></section>
     </main>
     <footer class="footer">  
@@ -612,9 +800,13 @@
   <!--wrapper-->
 
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/slick.js"></script>
-  <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
+<script src="js/slick.js"></script>
+<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&amp;lang=ru-RU&amp;apikey=<e28ccc70-b9f5-4f7b-aec4-03bab1133076>" type="text/javascript"></script>
   <script async src="js/placemark.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/nouislider.js"></script>
+  <script src="js/wNumb.min.js"></script>
+  <script src="js/select2.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 
