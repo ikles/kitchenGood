@@ -1,9 +1,10 @@
 jQuery(document).ready(function( $ ) {
 
     ymaps.ready(init);
+    ymaps.ready(init2);
 
     function init () {
-        var myMap = new ymaps.Map("map", {
+        var myMap = new ymaps.Map('map', {
             center: [44.651491, 37.938316],        
             controls: ['zoomControl'],
             zoom: 18            
@@ -33,20 +34,69 @@ jQuery(document).ready(function( $ ) {
 
 
 
-        // Создаем метку с помощью вспомогательного класса.
-       /* myPlacemark1 = new ymaps.Placemark([56.235340, 32.070925], {
+        myPlacemark2 = new ymaps.Placemark([44.651491, 37.938316], {
             // Свойства.
-            // Содержимое иконки, балуна и хинта.
-            iconContent: '',
-            balloonContent: 'Тверская улица, 9',
-            hintContent: 'Тверская улица, 9'
+            hintContent: '',
+            iconContentLayout: '<div class="icn"></div>',
+            iconContent: '<div class="icn"></div>'
         }, {
             // Опции.
-            // Стандартная фиолетовая иконка.
-            preset: 'twirl#buildingsIcon'
-        });*/
+            // Своё изображение иконки метки.
+            iconImageHref: 'img/geo.svg',
+            // Размеры метки.
+            iconImageSize: [60, 77],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [-3, -42],        
+            iconContentOffset: [11, 9] // позиция подписи
+        });
 
 
+
+
+        var zoomControl = new ymaps.control.ZoomControl({
+            options: {
+                size: "small"
+            }
+        });
+
+
+
+    // Добавляем все метки на карту.
+    myMap.controls.add(zoomControl);
+    myMap.geoObjects
+    .add(myPlacemark2)        
+    .add(myGeoObject);
+}
+
+    function init2 () {
+        var myMap = new ymaps.Map('map2', {
+            center: [44.651491, 37.938316],        
+            controls: ['zoomControl'],
+            zoom: 18            
+        }),
+
+        // Создаем геообъект с типом геометрии "Точка".
+        myGeoObject = new ymaps.GeoObject({
+            // Описание геометрии.
+            geometry: {
+                type: "Point",
+                coordinates: [55.8, 37.8]
+            },
+            // Свойства.
+            properties: {
+                // Контент метки.
+                iconContent: 'islands#darkGreenIcon',
+
+                balloonContent: 'Меня можно перемещать'
+            }
+        }, {
+            // Опции.
+            // Иконка метки будет растягиваться под размер ее содержимого.
+            preset: 'twirl#redStretchyIcon',
+            // Метку можно перемещать.
+            draggable: true
+        }),
 
 
 
@@ -67,22 +117,7 @@ jQuery(document).ready(function( $ ) {
             iconContentOffset: [11, 9] // позиция подписи
         });
 
-       /* myPlacemark3 = new ymaps.Placemark([52.718857, 41.449453], {
-            // Свойства.
-            hintContent: '',
-            iconContentLayout: '<div class="icn"></div>',
-            iconContent: '<div class="icn">Детский сад</div>'            
-        }, {
-            // Опции.
-            // Своё изображение иконки метки.
-            iconImageHref: 'img/geo-map.svg',
-            // Размеры метки.
-            iconImageSize: [50, 70],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-3, -42],        
-            iconContentOffset: [11, 9] // позиция подписи
-        });*/
+
 
 
         var zoomControl = new ymaps.control.ZoomControl({

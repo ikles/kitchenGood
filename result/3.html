@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,14 +24,9 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
-
   <div class="wrapper">
-
-
-
-        <header class="header header-2">
+        <header class="header header-1">
       <div class="head">
         <div class="contain">
           <div class="head__row">
@@ -38,24 +34,38 @@
               <img src="img/logo-head.svg" class="head__logo-img" />
               <span class="head__logo-text">
                 Мебель в Москве <br />
-                по индивидуальным размерам
+                по индивидуальным
+                <br>
+                размерам
               </span>
             </a>
-            <a href="" class="head__burger"><span class="head__burger-text">КАТАЛОГ</span></a>
+
             <a href="" class="head__btn">Вызов замерщика бесплатно</a>
-            <a href="" class="head__ask"> Задать вопрос?</a>
-            <div class="head__info">
-              <div class="head__phones">              
-                <a href="tel:8 (495) 555-00-55" class="head__phone">8 (495) 555-00-55</a>
-                <a href="" class="head__call-back">Перезвонить вам?</a>
-              </div>
+            <div class="head__socs">
+              <a href="" class="head__soc"><img src="img/soc-1.svg" /></a>
+              <a href="" class="head__soc"><img src="img/soc-2.svg" /></a>
+              <a href="" class="head__soc"><img src="img/soc-3.svg" /></a>
             </div>
-          </div>                                        
+            <div class="head__mode">
+              Режим работы: <br />
+              Пн-Вс с 9:00 до 20:00
+            </div>
+            <a href="mailto:kuhnigood@gmail.com" class="head__mail">kuhnigood@gmail.com</a>
+            <div class="head__info">
+              <div class="head__phones">
+                <a href="tel:8 (495) 555-00-55" class="head__phone">8 (495) 555-00-55</a>
+                <a href="tel:8 (495) 555-00-55" class="head__phone">8 (495) 555-00-55</a>
+              </div>
+              <a href="" class="head__call-back">Перезвонить вам?</a>
+            </div>
+          </div>
+          <!---->
         </div>
       </div>
       <div class="menu">
         <div class="contain">
-          <div class="menu__wrap">            
+          <div class="menu__wrap">
+            <a href="" class="menu__burger">Каталог</a>
             <ul class="menu__ul">
   <li><a href="">О Кухни GOOD</a></li>
   <li><a href="">Как заказать </a></li>
@@ -69,26 +79,215 @@
 </ul>
           </div>
         </div>
-      </div>
-    </header> 
-        <div class="popcat">
-      <span class="popcat__close"></span>
-      <div class="popcat__row">
-        <div class="popcat__img-w">
-          <img src="img/popcat__img.jpg" class="popcat__img">
+        <div class="menu-inn">
+  <div class="contain">
+    <div class="menu-inn__row">
+      <div class="menu-inn__col">
+        <div class="menu-inn__title">Кухни</div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">По стилю</a></li>
+            <li><a href="">По формелю</a></li>
+            <li><a href="">По материалу</a></li>
+          </ul>
         </div>
-        <div class="popcat__content">
-          <div class="popcat__title">Кухни делятся на подкатегории</div>
-          <p class="popcat__text">У нас есть опыт продаж мебели в оптовом направлении и в производстве мебели по
-            индивидуальным заказам. Компания является импортером мебели, сантехники и другой сопутствующей продукции из
-            Китая, Италии, Испании, Румынии, Словении, Белоруссии. Благодаря этому мы можем предложить широкий
-            ассортимент мебели и сопутствующих товаров для дома. У нас есть опыт продаж мебели в оптовом направлении и в
-            производстве мебели по индивидуальным заказам. Компания является импортером мебели, сантехники и другой
-          сопутствующей продукции из Китая, Италии, Испании, Румынии, Словении, Белоруссии. </p>
-          <div class="popcat__price">155 200 ₽</div>
+        <div class="menu-inn__item">
+          <div class="menu-inn__subtitle">по цвету:</div>
+          <ul class="menu-inn__list">
+            <li><a href="">Белые</a></li>
+            <li><a href="">Красные</a></li>
+            <li><a href="">Черный</a></li>
+            <li><a href="">Синий</a></li>
+            <li><a href="">Коричневый</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <div class="menu-inn__subtitle">по материалам</div>
+          <ul class="menu-inn__list">
+            <li><a href="">Лдсп</a></li>
+            <li><a href="">Металл</a></li>
+            <li><a href="">МДФ</a></li>
+            <li><a href="">ДСП</a></li>
+          </ul>
+        </div>
+        <a href="" class="menu-inn__subtitle">Посмотреть все</a>
+      </div>
+      <div class="menu-inn__col">
+        <div class="menu-inn__title">Шкафы</div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">По стилю</a></li>
+            <li><a href="">По формелю</a></li>
+            <li><a href="">По материалу</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Угловые</a></li>
+            <li><a href="">Прямые</a></li>
+            <li><a href="">П-образные</a></li>
+            <li><a href="">С барной стойкой</a></li>
+            <li><a href="">С островом</a></li>
+            <li><a href="">Радиусные</a></li>
+            <li><a href="">Скошенные углы</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Кантри</a></li>
+            <li><a href="">Хайтек</a></li>
+            <li><a href="">Евро</a></li>
+            <li><a href="">Классические</a></li>
+            <li><a href="">Минимализм</a></li>
+            <li><a href="">Модерн</a></li>
+            <li><a href="">Прованс</a></li>
+            <li><a href="">Современные</a></li>
+            <li><a href="">Лофт</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-inn__col">
+        <div class="menu-inn__title">Гаредробы</div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">По стилю</a></li>
+            <li><a href="">По формелю</a></li>
+            <li><a href="">По материалу</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Угловые</a></li>
+            <li><a href="">Прямые</a></li>
+            <li><a href="">П-образные</a></li>
+            <li><a href="">С барной стойкой</a></li>
+            <li><a href="">С островом</a></li>
+            <li><a href="">Радиусные</a></li>
+            <li><a href="">Скошенные углы</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Кантри</a></li>
+            <li><a href="">Хайтек</a></li>
+            <li><a href="">Евро</a></li>
+            <li><a href="">Классические</a></li>
+            <li><a href="">Минимализм</a></li>
+            <li><a href="">Модерн</a></li>
+            <li><a href="">Прованс</a></li>
+            <li><a href="">Современные</a></li>
+            <li><a href="">Лофт</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-inn__col">
+        <div class="menu-inn__title">Стенки</div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">По стилю</a></li>
+            <li><a href="">По формелю</a></li>
+            <li><a href="">По материалу</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Угловые</a></li>
+            <li><a href="">Прямые</a></li>
+            <li><a href="">П-образные</a></li>
+            <li><a href="">С барной стойкой</a></li>
+            <li><a href="">С островом</a></li>
+            <li><a href="">Радиусные</a></li>
+            <li><a href="">Скошенные углы</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Кантри</a></li>
+            <li><a href="">Хайтек</a></li>
+            <li><a href="">Евро</a></li>
+            <li><a href="">Классические</a></li>
+            <li><a href="">Минимализм</a></li>
+            <li><a href="">Модерн</a></li>
+            <li><a href="">Прованс</a></li>
+            <li><a href="">Современные</a></li>
+            <li><a href="">Лофт</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-inn__col">
+        <div class="menu-inn__title">В прихожую</div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">По стилю</a></li>
+            <li><a href="">По формелю</a></li>
+            <li><a href="">По материалу</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Угловые</a></li>
+            <li><a href="">Прямые</a></li>
+            <li><a href="">П-образные</a></li>
+            <li><a href="">С барной стойкой</a></li>
+            <li><a href="">С островом</a></li>
+            <li><a href="">Радиусные</a></li>
+            <li><a href="">Скошенные углы</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Кантри</a></li>
+            <li><a href="">Хайтек</a></li>
+            <li><a href="">Евро</a></li>
+            <li><a href="">Классические</a></li>
+            <li><a href="">Минимализм</a></li>
+            <li><a href="">Модерн</a></li>
+            <li><a href="">Прованс</a></li>
+            <li><a href="">Современные</a></li>
+            <li><a href="">Лофт</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="menu-inn__col">
+        <div class="menu-inn__title">Материалы</div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">По стилю</a></li>
+            <li><a href="">По формелю</a></li>
+            <li><a href="">По материалу</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Угловые</a></li>
+            <li><a href="">Прямые</a></li>
+            <li><a href="">П-образные</a></li>
+            <li><a href="">С барной стойкой</a></li>
+            <li><a href="">С островом</a></li>
+            <li><a href="">Радиусные</a></li>
+            <li><a href="">Скошенные углы</a></li>
+          </ul>
+        </div>
+        <div class="menu-inn__item">
+          <ul class="menu-inn__list">
+            <li><a href="">Кантри</a></li>
+            <li><a href="">Хайтек</a></li>
+            <li><a href="">Евро</a></li>
+            <li><a href="">Классические</a></li>
+            <li><a href="">Минимализм</a></li>
+            <li><a href="">Модерн</a></li>
+            <li><a href="">Прованс</a></li>
+            <li><a href="">Современные</a></li>
+            <li><a href="">Лофт</a></li>
+          </ul>
         </div>
       </div>
     </div>
+  </div>
+</div>
+      </div>
+    </header>
+
     <main class="main">
       <div class="bread">
         <div class="contain">
@@ -98,6 +297,253 @@
           </ul>
         </div>
       </div>
+
+      <section class="card">
+        <div class="contain">
+          <div class="card__w">
+            <div class="card__top-row">
+              <div class="card__name">
+                <div class="card__name-title">Кухня Фьорд 2</div>
+                <div class="pop-models__star-w"><a href="" class="pop-models__star"></a><a href="" class="pop-models__star"></a><a href="" class="pop-models__star"></a><a href="" class="pop-models__star"></a><a href="" class="pop-models__star"></a></div>
+              </div>
+              <label class="card__favorit">
+                <input type="checkbox">                
+                <span class="card__favorit-btn">Добавить в избранное</span>
+              </label>
+            </div>
+            <div class="card__row">
+              <div class="card__l">
+                <a data-fancybox="gallery-1" href="img/card-big.jpg" class="card__img-big-w">
+                  <img src="img/card-big.jpg" class="" />
+                </a>
+                <div class="card__img-mini-col">
+                  <a data-fancybox="gallery-1" href="img/card-big.jpg" class="card__img-mini-w"><img src="img/card-mini.jpg" class="card__img-mini" /></a>
+                  <a data-fancybox="gallery-1" href="img/card-big.jpg" class="card__img-mini-w"><img src="img/card-mini.jpg" class="card__img-mini" /></a>
+                  <a data-fancybox="gallery-1" href="img/card-big.jpg" class="card__img-mini-w"><img src="img/card-mini.jpg" class="card__img-mini" /></a>
+                </div>
+              </div>
+              <div class="card__r">
+                <div class="card__charact-title">Характеристики</div>
+                <div class="card__charact-cont">
+                  <div class="card__charact-row">
+                    <div class="card__charact-model">МОДЕЛЬ</div>
+                    <div class="card__charact-border"></div>
+                    <div class="card__charact-name">Фьорд 1</div>
+                  </div>
+                  <div class="card__charact-row">
+                    <div class="card__charact-model">ФАСАДЫ</div>
+                    <div class="card__charact-border"></div>
+                    <div class="card__charact-name">Массив дуба</div>
+                  </div>
+                  <div class="card__charact-row">
+                    <div class="card__charact-model">СТИЛЬ</div>
+                    <div class="card__charact-border"></div>
+                    <div class="card__charact-name">Модерн</div>
+                  </div>
+                </div>
+                <div class="card__price">
+                  <div class="card__price-l">
+                    <div class="card__price-txt-1">155 200 ₽</div>
+                    <div class="card__price-txt-2">155 200 ₽</div>
+                    <div class="card__price-txt-3">Цена за погонный метр</div>
+                    <div class="card__price-txt-4">15 200 ₽</div>
+                  </div>
+                  <div class="card__price-r">
+                    <div class="card__price-btn-w"><a href="" class="card__price-btn">Калькулятор</a><a href="" class="card__price-btn">Оставить заявку</a></div>
+                    <div class="card__price-min">
+                      <a href="" class="card__price-btn">Купить в 1 клик</a>
+                      <div class="card__min-price">Указана минимальная стоимость</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__excellence-wrap">
+                  <div class="card__excellence">
+                    <div class="card__excellence-w">
+                      <div class="card__excellence-img-w"><img src="img/card-excellence-1.svg" /></div>
+                      <div class="card__excellence-txt">Самый большой выбор фасадов</div>
+                    </div>
+                    <div class="card__excellence-w">
+                      <div class="card__excellence-img-w"><img src="img/card-excellence-2.svg" /></div>
+                      <div class="card__excellence-txt">Бесплатная доставка</div>
+                    </div>
+                  </div>
+                  <div class="card__excellence">
+                    <div class="card__excellence-w">
+                      <div class="card__excellence-img-w"><img src="img/card-excellence-3.svg" /></div>
+                      <div class="card__excellence-txt">Лучшие цены в городе</div>
+                    </div>
+                    <div class="card__excellence-w">
+                      <div class="card__excellence-img-w"><img src="img/card-excellence-4.svg" /></div>
+                      <div class="card__excellence-txt">Сроки изготовления от 7 дней</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__soc-w">
+                  <div class="card__soc-txt">Поделиться в социальных сетях</div>
+                  <div class="card__soc-row">
+                    <a href="" class="card__soc"><img src="img/soc-card-1.svg" /></a><a href="" class="card__soc"><img src="img/soc-card-2.svg" /></a><a href="" class="card__soc"><img src="img/soc-card-3.svg" /></a>
+                    <a href="" class="card__soc"><img src="img/soc-card-4.svg" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="advantage">
+            <a href="" class="advantage__item">
+              <img src="img/advantage-1.jpg" class="advantage__img" />
+              <div class="advantage__txt-w">
+                <div class="advantage__txt-1">РАССРОЧКА 0%</div>
+                <div class="advantage__txt-2">По 3 386 руб на 12 мес</div>
+              </div>
+            </a>
+            <a href="" class="advantage__item">
+              <img src="img/advantage-2.jpg" class="advantage__img" />
+              <div class="advantage__txt-w">
+                <div class="advantage__txt-1">Дизайн проект</div>
+                <div class="advantage__txt-2">В ПОДАРОК</div>
+              </div>
+            </a>
+            <a href="" class="advantage__item">
+              <img src="img/advantage-3.jpg" class="advantage__img" />
+              <div class="advantage__txt-w">
+                <div class="advantage__txt-1">СВОБОДА ДЕЙСТВИЙ</div>
+                <div class="advantage__txt-2">Разных материалов под нужный размеры</div>
+              </div>
+            </a>
+            <a href="" class="advantage__item">
+              <img src="img/advantage-4.jpg" class="advantage__img" />
+              <div class="advantage__txt-w">
+                <div class="advantage__txt-1">ОТЗЫВЫ</div>
+                <div class="advantage__txt-2">Наших клиентов</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="charact">
+        <div class="contain">
+          <div class="charact__card tabs">
+            <ul class="charact__ul tabs__list">
+              <li class="charact__li tabs__list-item active">ОПИСАНИЕ</li>
+              <li class="charact__li tabs__list-item">ХАРАКТЕРИСТИКИ</li>
+              <li class="charact__li tabs__list-item">ЦВЕТА ФАСАДОВ</li>
+              <li class="charact__li tabs__list-item"> ЦВЕТА КОРПУСА</li>
+              <li class="charact__li tabs__list-item"> ПОХОЖИЕ ПО СТИЛЮ</li>
+            </ul>
+            <div class="charact__specific">
+              <ul class="tabs__content-list">
+                <li class="tabs__content-list-item active">
+                  <div class="charact__specific-row">
+                    <div class="charact__specific-name">Кухня Патина 4</div>
+                    <div class="charact__trait"></div>
+                    <div class="charact__dimens">Габариты: 2600*2500</div>
+                  </div>
+                  <div class="seo-text">
+                    <p>Кухня выполнена в классическом стиле, при этом в проекте есть свои особенности. Контраст светлых фасадов с темной столешницей и корпусом, тонированные витражи  делают эту модель интересной и необычной. </p>
+                    <br>
+                    <br>
+                    <div class="h2 _low">Базовая комплектация</div>
+
+                    <div class="seo-list__content row">
+                      <div class="col-50">
+                        <ul>
+                          <li>Корпус, выполненный из ЛДСП Kronospan, высокого качества, сертифицированный на использование в жилых, детских и медицинских учреждениях, класс Е1. На выбор более 20 декоров.</li>
+                          <li>Фасады из немецкого МДФ 16 \ 19\ 22\ 27 мм с финишным декоративным покрытием ( ПВХ, пластик HPL, эмаль, акрил, шпон)</li>
+                          <li>Столешница ДСП облицованная HPL пластиком 26мм – 38 мм / опция</li>
+                          <li>Петли улучшенной модификации с системой clip on и увеличенной нагрузкой – петли с доводчиком / опция</li>                          
+                        </ul>
+                      </div>
+                      <div class="col-50">
+                        <ul>
+                          <li>Ящики на роликовых направляющих - TandemBox / опция</li>
+                          <li>Газ-лифт в антресольных секциях и хлебницах- подъемные механизмы с доводчиком / опция</li>
+                          <li>Бутылочницы без доводчика в соответствующие секции- выдвижные системы с доводчиком / опция</li>
+                          <li>Стекло на выбор</li>
+                          <li>Ручки на выбор</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="charact__border"></div>
+                  <div class="brands__color-w">
+                    <a href="" class="brands__color"><img src="img/brands-color-1.jpg" /></a>
+                    <a href="" class="brands__color"><img src="img/brands-color-2.jpg" /></a>
+                    <a href="" class="brands__color"><img src="img/brands-color-3.jpg" /></a>
+                    <a href="" class="brands__color"><img src="img/brands-color-4.jpg" /></a>
+                    <a href="" class="brands__color"><img src="img/brands-color-5.jpg" /></a>
+                    <a href="" class="brands__color"><img src="img/brands-color-6.jpg" /></a>
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                     <div class="h2 _low">Базовая комплектация</div>
+
+                    <div class="seo-list__content row">
+                      <div class="col-50">
+                        <ul>
+                          <li>Корпус, выполненный из ЛДСП Kronospan, высокого качества, сертифицированный на использование в жилых, детских и медицинских учреждениях, класс Е1. На выбор более 20 декоров.</li>
+                          <li>Фасады из немецкого МДФ 16 \ 19\ 22\ 27 мм с финишным декоративным покрытием ( ПВХ, пластик HPL, эмаль, акрил, шпон)</li>
+                          <li>Столешница ДСП облицованная HPL пластиком 26мм – 38 мм / опция</li>
+                          <li>Петли улучшенной модификации с системой clip on и увеличенной нагрузкой – петли с доводчиком / опция</li>                          
+                        </ul>
+                      </div>
+                      <div class="col-50">
+                        <ul>
+                          <li>Ящики на роликовых направляющих - TandemBox / опция</li>
+                          <li>Газ-лифт в антресольных секциях и хлебницах- подъемные механизмы с доводчиком / опция</li>
+                          <li>Бутылочницы без доводчика в соответствующие секции- выдвижные системы с доводчиком / опция</li>
+                          <li>Стекло на выбор</li>
+                          <li>Ручки на выбор</li>
+                        </ul>
+                      </div>
+                    </div>                  
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="charact__specific-row">
+                    <div class="charact__specific-name">Кухня Патина 4</div>
+                    <div class="charact__trait"></div>
+                    <div class="charact__dimens">Габариты: 2600*2500</div>
+                  </div>
+                </li>
+                <li class="tabs__content-list-item">
+                     <div class="h2 _low">Базовая комплектация</div>
+
+                    <div class="seo-list__content row">
+                      <div class="col-50">
+                        <ul>
+                          <li>Корпус, выполненный из ЛДСП Kronospan, высокого качества, сертифицированный на использование в жилых, детских и медицинских учреждениях, класс Е1. На выбор более 20 декоров.</li>
+                          <li>Фасады из немецкого МДФ 16 \ 19\ 22\ 27 мм с финишным декоративным покрытием ( ПВХ, пластик HPL, эмаль, акрил, шпон)</li>
+                          <li>Столешница ДСП облицованная HPL пластиком 26мм – 38 мм / опция</li>
+                          <li>Петли улучшенной модификации с системой clip on и увеличенной нагрузкой – петли с доводчиком / опция</li>                          
+                        </ul>
+                      </div>
+                      <div class="col-50">
+                        <ul>
+                          <li>Ящики на роликовых направляющих - TandemBox / опция</li>
+                          <li>Газ-лифт в антресольных секциях и хлебницах- подъемные механизмы с доводчиком / опция</li>
+                          <li>Бутылочницы без доводчика в соответствующие секции- выдвижные системы с доводчиком / опция</li>
+                          <li>Стекло на выбор</li>
+                          <li>Ручки на выбор</li>
+                        </ul>
+                      </div>
+                    </div>
+                </li>
+                <li class="tabs__content-list-item">
+                  <div class="charact__specific-row">
+                    <div class="charact__specific-name">Кухня Патина 4</div>
+                    <div class="charact__trait"></div>
+                    <div class="charact__dimens">Габариты: 2600*2500</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
       <section class="badvants badvants-3">
         <div class="contain">
           <div class="badvants__row">
@@ -796,6 +1242,943 @@
 
 
 
+
+<div class="modal-overlay modal-overlay_1">        
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block modal-form__block_1">     
+    <div class="modal-form__inner">
+      <span class="modal-close modal-close_1"></span>
+      <form class="popup__form">
+        <div class="popup__title">Написать нам</div>
+        <input class="popup__input-text" type="text" placeholder="Ваше имя">
+        <input class="popup__input-text" type="text" placeholder="Ваша почта">
+        <textarea class="popup__textarea" placeholder="Ваш телефон"></textarea>
+        <div class="popup__btn-w">
+          <button class="popup__btn">ОПТРАВИТЬ</button>
+        </div>  
+      </form>
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+<div class="modal-overlay modal-overlay_2">      
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block modal-form__block_2">
+    <div class="modal-form__inner">
+      <span class="modal-close modal-close_2"></span>
+      <form class="popup__form">
+        <div class="popup__title">Перезвонить вам</div>
+        <input class="popup__input-text" type="text" placeholder="Ваше имя">
+        <input class="popup__input-text" type="text" placeholder="Ваш номер телефона">
+        <div class="popup__btn-w">
+          <button class="popup__btn">ОПТРАВИТЬ</button>
+        </div>  
+      </form>
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+<div class="modal-overlay modal-overlay_3">      
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block modal-form__block_3">
+    <div class="modal-form__inner">
+      <span class="modal-close modal-close_3"></span>
+      <div class="popcat">        
+        <div class="popcat__row">
+          <div class="popcat__img-w">
+            <img src="img/popcat__img.jpg" class="popcat__img">
+          </div>
+          <div class="popcat__content">
+            <div class="popcat__title">Кухни делятся на подкатегории</div>
+            <p class="popcat__text">У нас есть опыт продаж мебели в оптовом направлении и в производстве мебели по
+              индивидуальным заказам. Компания является импортером мебели, сантехники и другой сопутствующей продукции из
+              Китая, Италии, Испании, Румынии, Словении, Белоруссии. Благодаря этому мы можем предложить широкий
+              ассортимент мебели и сопутствующих товаров для дома. У нас есть опыт продаж мебели в оптовом направлении и в
+              производстве мебели по индивидуальным заказам. Компания является импортером мебели, сантехники и другой
+            сопутствующей продукции из Китая, Италии, Испании, Румынии, Словении, Белоруссии. </p>
+            <div class="popcat__price">155 200 ₽</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+
+<div class="modal-overlay modal-overlay_4">
+  <div class="modal-form__layout"></div>
+  <div class="modal-form__block modal-form__block_4">
+    <div class="modal-form__inner">
+      <span class="modal-close modal-close_4"></span>
+      <div class="modprod">
+        <div class="modprod__inn">
+          <span class="modprod__close"></span>
+          <div class="modprod__scroll">
+            <div class="modprod__row-1">
+              <div class="modprod__left"><img src="img/modprod-1.jpg" /></div>
+              <div class="modprod__right">
+                <div class="modprod__title">Кухни делятся на подкатегории</div>
+                <p class="modprod__p">
+                  У нас есть опыт продаж мебели в оптовом направлении и в производстве мебели по индивидуальным заказам. Компания является импортером мебели, сантехники и другой сопутствующей продукции из Китая, Италии, Испании, Румынии,
+                  Словении, Белоруссии. Благодаря этому мы можем предложить широкий ассортимент мебели и сопутствующих товаров для дома.
+                </p>
+                <a href="" class="btn-o modprod__btn">ПЕРЕЙТИ В РАЗДЕЛ</a>
+              </div>
+            </div>
+            <div class="modadvs">
+              <div class="modadvs__left"><div class="modprod__title">Кухни делятся на подкатегории</div></div>
+              <div class="modadvs__row">
+                <div class="modadvs__item">
+                  <div class="modadvs__img-w"><img src="img/modadvs-1.svg" /></div>
+                  <div class="modadvs__text">По форме</div>
+                </div>
+                <div class="modadvs__item">
+                  <div class="modadvs__img-w"><img src="img/modadvs-2.svg" /></div>
+                  <div class="modadvs__text">По стилю</div>
+                </div>
+                <div class="modadvs__item">
+                  <div class="modadvs__img-w"><img src="img/modadvs-3.svg" /></div>
+                  <div class="modadvs__text">По материалу</div>
+                </div>
+              </div>
+            </div>
+            <form class="modprod__form">
+              <div class="modcheck__group">
+                <div class="modcheck__heading">Выбрать кухню по форме</div>
+                <div class="modcheck__row">
+                  <div class="modcheck__col-7">
+                    <label class="checkshape__item">
+                      <input type="checkbox" name="shape" checked>
+                      <span>
+                        <img src="img/checkshape-1.png" alt="">
+                      </span>
+                      <div class="checkshape__name">Угловые</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="modcheck__col-7">
+                    <label class="checkshape__item">
+                      <input type="checkbox" name="shape">
+                      <span>
+                        <img src="img/checkshape-1.png" alt="">
+                      </span>
+                      <div class="checkshape__name">Прямые</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="modcheck__col-7">
+                    <label class="checkshape__item">
+                      <input type="checkbox" name="shape">
+                      <span>
+                        <img src="img/checkshape-1.png" alt="">
+                      </span>
+                      <div class="checkshape__name">П-образные</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="modcheck__col-7">
+                    <label class="checkshape__item">
+                      <input type="checkbox" name="shape">
+                      <span>
+                        <img src="img/checkshape-1.png" alt="">
+                      </span>
+                      <div class="checkshape__name">С барной стойкой</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="modcheck__col-7">
+                    <label class="checkshape__item">
+                      <input type="checkbox" name="shape">
+                      <span>
+                        <img src="img/checkshape-1.png" alt="">
+                      </span>
+                      <div class="checkshape__name">С островом</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="modcheck__col-7">
+                    <label class="checkshape__item">
+                      <input type="checkbox" name="shape">
+                      <span>
+                        <img src="img/checkshape-1.png" alt="">
+                      </span>
+                      <div class="checkshape__name">Радиусные</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="modcheck__col-7">
+                    <label class="checkshape__item">
+                      <input type="checkbox" name="shape">
+                      <span>
+                        <img src="img/checkshape-1.png" alt="">
+                      </span>
+                      <div class="checkshape__name">Скошенные углы</div>
+                    </label>
+                  </div><!--col-->
+                </div>
+              </div>
+              <div class="modcheck__group">
+                <div class="modcheck__heading">Выбрать по стилю</div>
+                <div class="checkstyle__row">
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" checked>
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-1.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Современные</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-2.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Классические</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-3.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Евро</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-4.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Минимализм</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-5.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Кантри</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-6.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Хай-тек</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-7.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Прованс</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-8.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Модерн</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-9.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Лофт</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-10.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Под старину</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-11.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Неоклассика</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-12.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Эксклюзивные</div>
+                    </label>
+                  </div><!--col-->
+
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-13.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Дизайнерские</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-14.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Итальянские</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-15.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Английские</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="style">
+                      <span class="checkstyle__img-w">
+                        <img src="img/checkstyle-16.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Скандинавские</div>
+                    </label>
+                  </div><!--col-->
+                </div>
+              </div><!--group-->
+              <div class="modcheck__group">
+                <div class="modcheck__heading">Выбрать по материалу</div>
+                <div class="checkmat__row">
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material" checked>
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-1.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">МДФ</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-2.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Эмаль</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-3.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Пластик</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-4.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">С патиной</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-5.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Алвик Люкс</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-6.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Шпон</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-7.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Акрил</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-8.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Шпон</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-9.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Экошпон</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-10.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">ДСП</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-11.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">ЛДСП</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-12.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Массив</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-13.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Дуб</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-14.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Сосна</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkmat__col-5">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="material">
+                      <span class="checkmat__img-w">
+                        <img src="img/checkmat-15.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Дерево</div>
+                    </label>
+                  </div><!--col-->
+                </div>
+              </div><!--group-->
+              <div class="modcheck__group">
+                <div class="modcheck__heading">По стоимости</div>
+                <div class="modprice__row">
+                  <div class="modprice__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="price" checked>
+                      <span class="modprice__text">
+                        Дешевые
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modprice__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="price" >
+                      <span class="modprice__text">
+                        Эконом-класс
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modprice__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="price" >
+                      <span class="modprice__text">
+                        Дорогие
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modprice__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="price" >
+                      <span class="modprice__text">
+                        Элитные
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modprice__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="price" >
+                      <span class="modprice__text">
+                        В рассрочку
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                </div>
+              </div><!--group-->
+              <div class="modcheck__group">
+                <div class="modcheck__heading">По особенностям</div>
+                <div class="checkstyle__row">
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="features" checked>
+                      <span class="checkfea__img-w">
+                        <img src="img/checkfea-1.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Для студии</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="features">
+                      <span class="checkfea__img-w">
+                        <img src="img/checkfea-2.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Для хрущевки</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="features">
+                      <span class="checkfea__img-w">
+                        <img src="img/checkfea-3.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Для дачи</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="features">
+                      <span class="checkfea__img-w">
+                        <img src="img/checkfea-4.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Модульные</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="features">
+                      <span class="checkfea__img-w">
+                        <img src="img/checkfea-5.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Встроенные</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="features">
+                      <span class="checkfea__img-w">
+                        <img src="img/checkfea-6.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">С антресолями</div>
+                    </label>
+                  </div><!--col-->
+                  <div class="checkstyle__col-4">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="features">
+                      <span class="checkfea__img-w">
+                        <img src="img/checkfea-7.jpg" class="checkstyle__img" />
+                      </span>
+                      <div class="checkstyle__name">Кухни со скрытыми ручками</div>
+                    </label>
+                  </div><!--col-->
+                </div>
+              </div><!--group-->
+              <div class="modcheck__group">
+                <div class="modcheck__heading">По размеру</div>
+                <div class="modsize__row">
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" checked>
+                      <span class="modprice__text">
+                        Большие
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        Малогабаритные
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        Узкие
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        Мини
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        Небольшие
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        3 кв.м
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        5 кв.м
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        6 кв.м
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        8 кв.м
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        9 кв.м
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modsize__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="size" >
+                      <span class="modprice__text">
+                        12 кв.м
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                </div>
+              </div><!--group-->
+              <div class="modcheck__group">
+                <div class="modcheck__heading">По цвету</div>
+                <div class="modcolor__row">
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color" checked>
+                      <span class="modcolor__text">
+                        Белые
+                      </span>                  
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #000000;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #FFC700;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #D53434;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #4988C3;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #4FB653;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #C4C4C4;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #F9FACE;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: linear-gradient(263.09deg, #C0C0C0 -10.56%, rgba(255, 255, 255, 0.56348) 51.26%, rgba(192, 192, 192, 0) 131.05%);"></span>
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #8D7C67;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #C5C5C5;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #DCC7C7;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #5B3D49;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #CAC599;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #E3ECCF;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #FFA800;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #8E1717;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #CAE7C3;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #E0AF4F;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #522E2E;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #753F0E;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #8BB880;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #E2B865;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #AE4C87;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #6F5EDA;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #7FDA38;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: linear-gradient(272.23deg, #FF0000 -6.41%, #EBFF00 46.58%, #42FF00 116.45%);"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #663B1C;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #F3EBEB;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #616161;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #382EA6;"></span>             
+                    </label>
+                  </div><!--col-->
+                  <div class="modcolor__col">
+                    <label class="checkstyle__item">
+                      <input type="checkbox" name="color">
+                      <span class="modcolor__text" style="background: #29969D;"></span>             
+                    </label>
+                  </div><!--col-->
+                </div>
+              </div><!--group-->
+              <div class="modcheck__group">
+                <div class="modcheck__heading">Популярные модели мебели</div>
+                <div class="modpop__row">
+                  <div class="modpop__col">
+                    <a href="" class="modpop__item">
+                      <span class="modpop__img-w"><img src="img/modpop-1.jpg" alt=""></span>
+                      <span class="modpop__title">Кухня альфа белый глянец</span>
+                      <span class="modpop__price">155 200 ₽</span>
+                    </a>
+                  </div><!--col-->
+                  <div class="modpop__col">
+                    <a href="" class="modpop__item">
+                      <span class="modpop__img-w"><img src="img/modpop-2.jpg" alt=""></span>
+                      <span class="modpop__title">Кухня альфа белый глянец</span>
+                      <span class="modpop__price">155 200 ₽</span>
+                    </a>
+                  </div><!--col-->
+                  <div class="modpop__col">
+                    <a href="" class="modpop__item">
+                      <span class="modpop__img-w"><img src="img/modpop-3.jpg" alt=""></span>
+                      <span class="modpop__title">Кухня альфа белый глянец</span>
+                      <span class="modpop__price">155 200 ₽</span>
+                    </a>
+                  </div><!--col-->
+                  <div class="modpop__col">
+                    <a href="" class="modpop__item">
+                      <span class="modpop__img-w"><img src="img/modpop-4.jpg" alt=""></span>
+                      <span class="modpop__title">Кухня альфа белый глянец</span>
+                      <span class="modpop__price">155 200 ₽</span>
+                    </a>
+                  </div><!--col-->
+                  <div class="modpop__col">
+                    <a href="" class="modpop__item">
+                      <span class="modpop__img-w"><img src="img/modpop-5.jpg" alt=""></span>
+                      <span class="modpop__title">Кухня альфа белый глянец</span>
+                      <span class="modpop__price">155 200 ₽</span>
+                    </a>
+                  </div><!--col-->
+                  <div class="modpop__col">
+                    <a href="" class="modpop__item">
+                      <span class="modpop__img-w"><img src="img/modpop-6.jpg" alt=""></span>
+                      <span class="modpop__title">Кухня альфа белый глянец</span>
+                      <span class="modpop__price">155 200 ₽</span>
+                    </a>
+                  </div><!--col-->
+                  <div class="modpop__col">
+                    <a href="" class="modpop__item">
+                      <span class="modpop__img-w"><img src="img/modpop-7.jpg" alt=""></span>
+                      <span class="modpop__title">Кухня альфа белый глянец</span>
+                      <span class="modpop__price">155 200 ₽</span>
+                    </a>
+                  </div><!--col-->
+                  <div class="modpop__col">
+                    <a href="" class="modpop__item">
+                      <span class="modpop__img-w"><img src="img/modpop-8.jpg" alt=""></span>
+                      <span class="modpop__title">Кухня альфа белый глянец</span>
+                      <span class="modpop__price">155 200 ₽</span>
+                    </a>
+                  </div><!--col-->
+                </div>
+                <div class="modpop__btn-w">
+                  <a href="" class="btn-o modpop__btn">ПОКАЗАТЬ ЕЩЕ</a>
+                </div>
+              </div><!--group-->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!--modal-overlay-->
+
+
   </div>
   <!--wrapper-->
 
@@ -807,6 +2190,7 @@
   <script src="js/nouislider.js"></script>
   <script src="js/wNumb.min.js"></script>
   <script src="js/select2.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/common.js"></script>
 </body>
 
