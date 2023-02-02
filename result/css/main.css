@@ -5013,7 +5013,9 @@ body.active {
             flex: 1 1 auto; }
     .card__img-big-w img {
       max-width: 100%;
-      height: auto; } }
+      height: auto; }
+  .simproducts__col {
+    width: 50%; } }
 
 @media only screen and (max-width: 640px) {
   .contain {
@@ -5093,7 +5095,18 @@ body.active {
             flex-wrap: wrap; }
   .charact__dimens {
     width: 100%;
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  .calc__ul li {
+    font-size: 15px;
+    background-size: 15px;
+    background-position: top 5px left;
+    margin-bottom: 15px; }
+  .calc__subtitle {
+    font-size: 17px;
+    line-height: 1.4; }
+  .calculate__btn {
+    padding: 0 10px;
+    width: 100%; } }
 
 @media only screen and (max-width: 575px) {
   .contain {
@@ -5147,6 +5160,7 @@ body.active {
     padding: 35px 20px; }
   .consult__inform {
     font-size: 14px; }
+  .calc__title,
   .consult__h,
   .quest__h,
   .h2 {
@@ -5204,7 +5218,16 @@ body.active {
     margin-right: 0;
     margin-bottom: 10px; }
   .card__min-price {
-    max-width: 136px; } }
+    max-width: 136px; }
+  .card__excellence-w {
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start; }
+  .card__excellence-txt {
+    margin-left: 7px; }
+  .card__r {
+    padding: 21px 20px 17px 20px; } }
 
 @media only screen and (max-width: 480px) {
   .topslide__img-w {
@@ -5294,7 +5317,15 @@ body.active {
   .more__btn, .calc__btn {
     margin: 0 5px; }
   .card__img-mini-w {
-    height: 80px; } }
+    height: 80px; }
+  .advantage__txt-2,
+  .advantage__txt-1 {
+    font-size: 13px;
+    padding: 0 10px; }
+  .calc {
+    padding: 30px 0; }
+  .simproducts__col {
+    width: 100%; } }
 
 @media only screen and (max-width: 375px) {
   .hadvant {
@@ -5306,7 +5337,30 @@ body.active {
   .badvants {
     padding-bottom: 30px; }
   .our-work__w {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .card__price-btn-w {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 10px; }
+  .card__price {
+    width: 100%; }
+  .card__price-r {
+    margin-left: 0;
+    width: 100%;
+    display: block; }
+  .card__price-btn {
+    width: 100%; }
+  .card__min-price {
+    max-width: 100%;
+    text-align: center; }
+  .card__name {
+    margin-bottom: 15px;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: -5px; }
+    .card__name > * {
+      margin-top: 5px; } }
 
 @media only screen and (max-width: 360px) {
   .mcatalog__title {
