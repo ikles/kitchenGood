@@ -38,7 +38,14 @@
         <div class="contain">
           <div class="menu__wrap">
             <a href="" class="menu__burger">Каталог</a>
-            @@include('var/_menu-ul.html')
+            
+            <div class="col-mnu">
+              <div class="hidden-mnu">
+                <a href="#" class="toggle-mnu"><span></span></a>
+              </div>
+              @@include('var/_menu-ul.html')
+            </div>
+
           </div>
         </div>
         @@include('var/_menu-inn.html')

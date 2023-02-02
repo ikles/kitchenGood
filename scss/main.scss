@@ -242,17 +242,6 @@ body {
   display: inline-block;
 }
 
-.header-2 {
-  .head__phones {
-    text-align: right;
-  }
-  .head__info {
-    background-position: left top;
-  }
-  .menu__ul > li > a {
-    padding: 0 21px;
-  }
-}
 
 .header-1 {
   .head__logo {    
@@ -391,7 +380,12 @@ body {
   margin-bottom: 5px;
 }
 
+.col-mnu {  
+          flex-grow: 1;
+}
+
 .menu__ul {  
+  width: 100%;
   display: flex;
   align-items: center;  
   flex-grow: 1;          
@@ -403,7 +397,7 @@ body {
       display: inline-flex;
       height: 50px;      
       align-items: center;
-      padding: 0 15px;
+      padding: 0 16px;
       border-left: 1px solid #454C55;
       border-right: 1px solid #454C55;
       &:hover {
@@ -473,6 +467,7 @@ body {
   .slick-dots {
     position: absolute;
     bottom: 0px;
+    left: 0;
     width: 100%;
     display: flex;    
     justify-content: center;
@@ -569,6 +564,9 @@ body {
 .topslide__img-w {
   width: 60%;
   margin-left: 10px;
+  img {
+    max-width: 100%;
+  }
 }
 
 .topslide__img {
@@ -1116,9 +1114,8 @@ body {
 input[type="text"].consult__input-text {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.6);
-  
-  border-radius: 14px;
-  width: 660px;
+  border-radius: 14px;  
+  width: 100%;
   height: 55px;
   margin-bottom: 19px;
   padding: 0 15px;
@@ -1484,8 +1481,10 @@ input[type="text"].consult__input-text {
 
 
 .partners__slide {
+  height: 35px;
   display: inline-flex $i;  
-  justify-content: center;
+  justify-content: center;  
+          align-items: center;
 }
 
 .map {
@@ -2256,13 +2255,14 @@ input[type="text"].consult__input-text {
 }
 
 
-
+.filter-open-span {
+  display: none;
+}
 
 .filter__filling {
   margin-top: 25px;
   background: rgb(255, 255, 255);
-  border-radius: 14px;
-  width: 233px;
+  border-radius: 14px;  
   padding: 18px 12px 27px;
 }
 
@@ -2559,7 +2559,8 @@ input[type="text"].price-range__input-text {
   margin-right: -14px;
 }
 .catproduct__col {
-  padding: 0 14px;          
+  padding: 0 14px; 
+  width: 33.333%;         
 }
 
 .catproduct {  
@@ -3183,6 +3184,8 @@ input[type="text"].price-range__input-text {
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 33px;
+  min-height: 22px;
+  line-height: 22px;
 }
 
 .card__l {

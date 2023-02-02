@@ -48,7 +48,7 @@ jQuery(document).ready(function( $ ) {
 
 
 
-  $('body.mouse .menu__burger').hover(
+/*  $('body.mouse .menu__burger').hover(
     function(){      
       $('.menu-inn').addClass('show');
     },
@@ -76,7 +76,7 @@ jQuery(document).ready(function( $ ) {
   $('.show-filters__btn').click(function (e) {
     e.preventDefault();
     $('.catfilter-tit, .catfilter-cont').removeClass('hide');
-  })
+  })*/
 
 
 
@@ -89,7 +89,7 @@ jQuery(document).ready(function( $ ) {
   });    
 
 
-$(".modprod").mCustomScrollbar({
+  $(".modprod").mCustomScrollbar({
     axis: "y",
     theme: "dark-3",
     mouseWheel: 1,
@@ -121,9 +121,34 @@ $(".modprod").mCustomScrollbar({
     autoplaySpeed: 0,  
     arrows: true,
     dots: false,
-    pauseOnHover: true,  
+    pauseOnHover: true, 
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4        
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    ] 
   });
 
+  $('.filter__h').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('enable');
+    $('.filter__filling').slideToggle();
+  });
 
 
   $('.accordion-header').click(function () {
