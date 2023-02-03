@@ -1754,7 +1754,7 @@ input[type="text"].consult__input-text {
   height: 182px;
   width: 100%;
   overflow: hidden;  
-          border-radius: 14px;
+  border-radius: 14px;
 }
 
 .checkstyle__img {
@@ -1804,10 +1804,10 @@ input[type="text"].consult__input-text {
 
 .checkmat__img-w {
   height: 157px;
-overflow: hidden;  
-width: 100%;
-display: block;
-          border-radius: 14px;
+  overflow: hidden;  
+  width: 100%;
+  display: block;
+  border-radius: 14px;
 }
 
 .modprice__row {
@@ -1865,7 +1865,7 @@ display: block;
   height: 211px;
   width: 100%;
   overflow: hidden;
-          border-radius: 14px;
+  border-radius: 14px;
 }
 
 .modsize__row {
@@ -3944,17 +3944,62 @@ input[type="text"].popup__input-text {
   display: none;  
   background: rgba(248, 250, 255, 0.8);  
   &_4 {
-    
+
   }  
 }
 
 .modprod__inn {
-  padding-right: 74px;
+  padding-right: 20px;
 }
+
+:root {
+  --scrollbarBg: #E1DADA;
+  --scrollbarThumb: #7B6858;
+  --scrollbarWidth: 12px;
+  --scrollbarBorder: 3px solid var(--scrollbarBg);
+  --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+}
+
+.modal-overlay_4 {
+  /*background-color: rgba(#000, 0.6);*/
+}
+
+.modal-form__block_4 {
+  max-width: 1289px;    
+  border: 1px solid #f2f2f2;
+  border-width: 60px 39px 30px 0px;
+}
+
+.modal-close_4 {
+  top: -40px $i;
+  right: -10px $i;
+}
+
+.modprod {
+  overflow-x: auto;
+  scrollbar-width: var(--scrollbarWidth);
+  scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+  &::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+  }
+  &::-webkit-scrollbar-track {
+    background: var(--scrollbarBg);
+    border-radius: var(--scrollbarBorderRadius);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+  }
+}
+
+.modal-overlay_4 {
+  display: block;  
+}
+
 .modprod {  
   width: 100%;
-  background: rgb(242, 242, 242);  
-  border-radius: 14px;
+  background: rgb(242, 242, 242);    
   padding-top: 68px;
   padding-left: 74px;
   padding-bottom: 48px;  
@@ -3962,8 +4007,8 @@ input[type="text"].popup__input-text {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  overflow-x: auto;  
-  max-height: calc(100vh - 80px);
+  overflow: auto;
+  max-height: calc(100vh - 150px);  
   .mCSB_inside>.mCSB_container {
     margin-right: 0;
   }
@@ -4019,9 +4064,7 @@ input[type="text"].popup__input-text {
     top: 50%;
     transform: translate(-50%, -50%);
   }
-  &_4 {
-    max-width: 1328px;
-  }
+  
 }
 
 

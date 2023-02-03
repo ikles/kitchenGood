@@ -98,12 +98,12 @@ jQuery(document).ready(function( $ ) {
   });    
 
 
-  $(".modprod").mCustomScrollbar({
+/*  $(".modprod").mCustomScrollbar({
     axis: "y",
     theme: "dark-3",
     mouseWheel: 1,
     scrollInertia: '230'
-  });    
+  });    */
 
 
   $('.top__slider').slick({
