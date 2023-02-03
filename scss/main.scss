@@ -310,7 +310,7 @@ body {
   }
   &.show {
     &:before {
-    background-image: url("../img/burger-menu2.svg");      
+      background-image: url("../img/burger-menu2.svg");      
     }
   }
 }
@@ -386,7 +386,7 @@ body {
 }
 
 .col-mnu {  
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 .menu__ul {  
@@ -1489,7 +1489,7 @@ input[type="text"].consult__input-text {
   height: 35px;
   display: inline-flex $i;  
   justify-content: center;  
-          align-items: center;
+  align-items: center;
 }
 
 .map {
@@ -1645,8 +1645,21 @@ input[type="text"].consult__input-text {
 }
 
 .checkshape__item {
-  display: block;
-  cursor: pointer;
+  display: block;  
+  span {
+    border: 1px solid rgba(165, 165, 165, 0.5);
+    border-radius: 14px;
+    height: 115px;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+  }
+  &:hover {
+    text-decoration: none;
+    span {
+      background-color: #FFF;
+    }
+  }
   input[type="checkbox"],
   input[type="radio"] {
     display: none;
@@ -1739,6 +1752,9 @@ input[type="text"].consult__input-text {
 
 .checkstyle__img-w {
   height: 182px;
+  width: 100%;
+  overflow: hidden;  
+          border-radius: 14px;
 }
 
 .checkstyle__img {
@@ -1788,6 +1804,10 @@ input[type="text"].consult__input-text {
 
 .checkmat__img-w {
   height: 157px;
+overflow: hidden;  
+width: 100%;
+display: block;
+          border-radius: 14px;
 }
 
 .modprice__row {
@@ -1804,7 +1824,7 @@ input[type="text"].consult__input-text {
 .modprice__text {
   height: 90px;
   border: 1px solid rgba(#A5A5A5, 0.5);
-  
+  width: 100%;
   display: flex $i;
   align-items: center;
   justify-content: center;
@@ -1818,6 +1838,16 @@ input[type="text"].consult__input-text {
 }
 
 .checkstyle__item {
+  width: 100%;
+  &:hover {
+    text-decoration: none;
+    .modprice__text {
+      background-color: #FFF;
+    }
+    .checkstyle__name {
+      background-color: #AF703B;
+    }
+  }
   input[type="checkbox"],
   input[type="radio"] {
     &:checked {
@@ -1833,6 +1863,9 @@ input[type="text"].consult__input-text {
 
 .checkfea__img-w {
   height: 211px;
+  width: 100%;
+  overflow: hidden;
+          border-radius: 14px;
 }
 
 .modsize__row {
@@ -1868,10 +1901,13 @@ input[type="text"].consult__input-text {
 .modcolor__text {
   height: 86px;
   display: flex;  
+  width: 100%;  
+  border-radius: 14px;
   align-items: center;
   justify-content: center;
   border: 1px solid rgba(#A5A5A5, 0.5);
   position: relative;
+  background-color: #FFF;
   &:after {
     content: "";
     display: block;
@@ -2872,9 +2908,22 @@ input[type="text"].price-range__input-text {
   margin-bottom: 10px;
 }
 
+input[type="text"].select__input {
+  width: 100%;
+  background: none;
+  border: 1px solid rgb(255, 255, 255);  
+  border-radius: 14px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  &::placeholder {
+    color: #FFF;
+  }
+}
 .select {
-  border: 1px solid rgb(255, 255, 255);
-  
+  border: 1px solid rgb(255, 255, 255);  
   border-radius: 14px;
   height: 50px;
   display: flex;
@@ -3895,7 +3944,7 @@ input[type="text"].popup__input-text {
   display: none;  
   background: rgba(248, 250, 255, 0.8);  
   &_4 {
-display: block;
+    
   }  
 }
 

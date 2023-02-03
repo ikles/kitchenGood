@@ -1839,8 +1839,24 @@ input[type="text"].consult__input-text {
   width: calc(14.2857% - 0px); }
 
 .checkshape__item {
-  display: block;
-  cursor: pointer; }
+  display: block; }
+  .checkshape__item span {
+    border: 1px solid rgba(165, 165, 165, 0.5);
+    border-radius: 14px;
+    height: 115px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .checkshape__item:hover {
+    text-decoration: none; }
+    .checkshape__item:hover span {
+      background-color: #FFF; }
   .checkshape__item input[type="checkbox"],
   .checkshape__item input[type="radio"] {
     display: none; }
@@ -1930,7 +1946,10 @@ input[type="text"].consult__input-text {
       background-color: #AF703B; }
 
 .checkstyle__img-w {
-  height: 182px; }
+  height: 182px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px; }
 
 .checkstyle__img {
   object-fit: cover;
@@ -1986,7 +2005,11 @@ input[type="text"].consult__input-text {
   margin-bottom: 31px; }
 
 .checkmat__img-w {
-  height: 157px; }
+  height: 157px;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  border-radius: 14px; }
 
 .modprice__row {
   display: -webkit-flex;
@@ -2003,6 +2026,7 @@ input[type="text"].consult__input-text {
 .modprice__text {
   height: 90px;
   border: 1px solid rgba(165, 165, 165, 0.5);
+  width: 100%;
   display: -webkit-flex !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -2020,15 +2044,26 @@ input[type="text"].consult__input-text {
   padding: 0 5px;
   color: #4B535E; }
 
-.checkstyle__item input[type="checkbox"]:checked + span,
-.checkstyle__item input[type="radio"]:checked + span {
-  background-color: #FFF; }
-  .checkstyle__item input[type="checkbox"]:checked + span:before,
-  .checkstyle__item input[type="radio"]:checked + span:before {
-    display: none; }
+.checkstyle__item {
+  width: 100%; }
+  .checkstyle__item:hover {
+    text-decoration: none; }
+    .checkstyle__item:hover .modprice__text {
+      background-color: #FFF; }
+    .checkstyle__item:hover .checkstyle__name {
+      background-color: #AF703B; }
+  .checkstyle__item input[type="checkbox"]:checked + span,
+  .checkstyle__item input[type="radio"]:checked + span {
+    background-color: #FFF; }
+    .checkstyle__item input[type="checkbox"]:checked + span:before,
+    .checkstyle__item input[type="radio"]:checked + span:before {
+      display: none; }
 
 .checkfea__img-w {
-  height: 211px; }
+  height: 211px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 14px; }
 
 .modsize__row {
   margin-top: 27px;
@@ -2069,6 +2104,8 @@ input[type="text"].consult__input-text {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  border-radius: 14px;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
@@ -2076,7 +2113,8 @@ input[type="text"].consult__input-text {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid rgba(165, 165, 165, 0.5);
-  position: relative; }
+  position: relative;
+  background-color: #FFF; }
   .modcolor__text:after {
     content: "";
     display: block;
@@ -3344,6 +3382,29 @@ input[type="text"].price-range__input-text {
   color: white;
   margin-bottom: 10px; }
 
+input[type="text"].select__input {
+  width: 100%;
+  background: none;
+  border: 1px solid white;
+  border-radius: 14px;
+  height: 50px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 20px;
+  padding-right: 20px; }
+  input[type="text"].select__input::-webkit-input-placeholder {
+    color: #FFF; }
+  input[type="text"].select__input::-moz-placeholder {
+    color: #FFF; }
+  input[type="text"].select__input:-ms-input-placeholder {
+    color: #FFF; }
+  input[type="text"].select__input::placeholder {
+    color: #FFF; }
+
 .select {
   border: 1px solid white;
   border-radius: 14px;
@@ -4364,8 +4425,6 @@ input[type="text"].popup__input-text {
   z-index: 15;
   display: none;
   background: rgba(248, 250, 255, 0.8); }
-  .modal-overlay_4 {
-    display: block; }
 
 .modprod__inn {
   padding-right: 74px; }
