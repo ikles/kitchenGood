@@ -308,6 +308,11 @@ body {
   &:hover {
     text-decoration: none;
   }
+  &.show {
+    &:before {
+    background-image: url("../img/burger-menu2.svg");      
+    }
+  }
 }
 
 .menu {
@@ -320,7 +325,7 @@ body {
   padding-top: 44px;
   padding-bottom: 61px;
   position: absolute;
-  z-index: 3;
+  z-index: 15;
   left: 0;
   top: 50px;
   width: 100%;
@@ -3890,7 +3895,7 @@ input[type="text"].popup__input-text {
   display: none;  
   background: rgba(248, 250, 255, 0.8);  
   &_4 {
-
+display: block;
   }  
 }
 
